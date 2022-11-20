@@ -1,0 +1,275 @@
+一. gdb编译选项（gcc/g++ 在编译时加入-g来加入debug信息）
+
+-g0等于不加-g，即不包含任何调试信息
+-g1包含最小的调试信息，一般来说只有在你不需要调试信息，之需要backtrack信息，并且很在意程序大小，或者有其他保密/特殊需求是才会使用-g1
+-g2为gdb默认，包含绝大多数你需要的调试信息
+-g3包含额外的调试信息，例如包含宏定义信息
+---------------------------------------------------------------------------------------https://github.com/zengfr/ida-pro-idb-database/
+
+- uefi readme https://github.com/zengfr/ida-pro-idb-database/tree/main/demo
+- uefi article https://my.oschina.net/zengfr/blog/5606084
+- uefi video   https://www.bilibili.com/video/BV1HG4y1V7Ym/
+
+https://wizardforcel.gitbooks.io/100-gdb-tips/content/index.html
+
+qemu-system-x86_64.exe -m 256M -machine q35 -nographic -pflash Outputs/qemu/SlimBootloader.bin -serial tcp:127.0.0.1:1234,server
+
+打开gdb的命令历史功能，通常可以先执行下面的3个gdb命令：
+
+set history filename gdb.history
+
+set history save on
+
+set history size 1000
+------------------------------------------------------
+set disassemble-next-line on
+display /i $pc每次程序中断后可以看到即将被执行的下一条汇编指令，可以 其中 $pc 代表当前汇编指令，/i 表示以十六进行显示。
+
+71c7151
+
+target remote 127.0.0.1:12345
+file C:/Users/zengfr/Desktop/qaq/EFI/BOOT/BOOTX64.efi
+
+x/16xb 0xfff0
+x/16xb 0x1b6a0
+x/16xb 0x1a6a0
+x/16xb 0xb6b0
+b *0x1a6a0
+b *0x1b6a0
+b *0xb6b0
+
+b _ModuleEntryPoint
+b ModuleEntryPoint
+b *0xb6b0
+
+i b --查看断点号
+d 断点号--删除断点
+delete breakpoints：清除所有断点：
+i proc mappings
+i files
+i target
+show version
+info functions
+info watchpoints
+i threads
+i frame ”命令（i是info命令缩写）显示函数堆栈帧信息
+frame n”命令选择函数堆栈帧，其中n是层数
+“up n”或“down n”命令向上或向下选择函数堆栈帧
+在gdb中，可以使用如下命令将设置的断点保存下来：
+(gdb) save breakpoints file-name-to-save
+下此调试时，可以使用如下命令批量设置保存的断点：
+(gdb) source file-name-to-save
+-------------------------------------------------------------
+https://sourceware.org/gdb/onlinedocs/gdb/Searching-Memory.html
+find [/sn] start_addr, +len, val1 [, val2, …]
+find [/sn] start_addr, end_addr, val1 [, val2, …]
+s, search query size
+n, maximum number of finds
+find &hello[0], +sizeof(hello), "hello"
+find &hello[0], +sizeof(hello), 'h', 'e', 'l', 'l', 'o'
+find &mixed, +sizeof(mixed), (char) 'c', (short) 0x1234, (int) 0x87654321
+
+find 0x419a1000, 0x7e5b6000, 964
+find 0x0,0xffffffff,0x48,0x89,0x5c,0x24,0x08,0x57,0x48,0x83,0xec,0x20
+find /b16 0x00000000,0x007fda20,0x48,0x89,0x5c,0x24,0x08,0x57,0x48,0x83,0xec,0x20
+find /b16 0x00000000,0x007fda20,0x0f,0x20,0xc0,0xa8,0x01,0x74,0x05 
+find /b16 0x00000000,0x066fda20,0x48,0x89,0x5c,0x24,0x08,0x57,0x48,0x83,0xec,0x20
+0x065906b0
+b 字节
+h 半字（2 字节）
+w 字（4 字节）
+g 双字（8 字节）
+x/16xb 0x0659c6b0
+x/16xb 0x0658b6b0
+------------------------------
+ 1. backtrace：显示栈信息。简写为bt。
+ 11. continue 继续运行程序。进入调试模式后，若你已经获取了你需要的信息或者需要程序继续运行时使用。可简写为c
+
+     12. until 执行到当前循环完成。可简写为u
+
+     13. step 单步调试，步入当前函数。可简写为s
+
+     14. next 单步调试，步过当前函数。可简写为n
+
+     15. finish 执行到当前函数返回
+-----------------------------------------------------------------------------------
+进入汇编调试界面
+layout src：显示源代码窗口
+layout asm：显示反汇编窗口
+单步执行命令
+si  //step into 进入函数内部
+ni //next   不进入函数内部
+查看调试信息
+
+//查看寄存器
+info registers 
+
+//查看局部变量
+info locals
+
+//查看内存
+x/<n/f/u> <addr>
+n：输出单元的个数；
+f：是输出格式。比如 x 是以16进制形式输出，o 是以8进制形式输出等等。
+u：标明一个单元的长度。b 是 1 个 byte，h 是 2 个 byte（halfword），w 是 4 个 byte（word），g 是 8 个 byte（giant word）。
+
+p/x
+
+//查看栈帧
+info frame
+info f
+
+//查看函数的参数名及其值
+info args
+
+
+//查看异常处理信息
+info catch
+---------------------------------------------------------------------
+使用 gdb 对程序进行汇编级调试
+开始/重新开始
+  ( gdb) r     ( run )
+  
+  下断点
+  (gdb) b *0x0804ce2b
+   b 表示  break
+  
+  单步步过
+  (gdb) ni    (next instruction)
+  单步步入  
+  (gdb) si    ( step instruction )
+  继续执行
+  ( gdb )c
+  
+  执行到返回
+  (gdb) finish
+  
+  disas 
+  
+  反汇编一段指令。可以带零个、一个或两个参数。第一个参数是反汇编开始地址，第二个参数是反汇编结束地址。
+  
+  如果没有参数，则反汇编当前的函数。
+  
+  
+  内存读/写断点
+  watch *(int  *)0x8049aa4
+  在 0x8049aa4 处下写断点，断点的范围为 4个字节。
+  gdb支持更大范围的内存写断点。但在汇编条件下，我还没有找到设置更大内存写断点的方法。
+  rwatch ，awatch 用法同 watch ，分别表示读断点和 读写断点。
+  读写断点依赖于 gcc可用的硬件高度寄存器。
+  
+  
+  
+  寄存器窗口
+  
+  (gdb) display
+  
+  设定要观察的变量的内容。这些变量的值在程序每次被断下来后显示在屏幕上。
+  
+  例如，我们经常要关注  eax, ebx, ecx,edx的内容，则用 display 设置他们为观察变量。
+  
+  (gdb) display  /x $eax
+  
+  (gdb) display  /x $ebx
+  
+  (gdb) display  /x $ecx
+  
+  (gdb) display  /x $edx
+  
+  
+  (gdb) until 
+相当于 od  的 f4
+  
+  
+  特色功能：
+  1、设置反汇编代码使用的指令集
+  (gdb) set disas intel  show disassembly-flavor   set disassembly-flavor intel
+  
+  设置反汇编代码使用的指令集，可选择 intel 指令集或 AT&T指令集.
+  
+  该指令只能用于x86平台。
+  
+  
+  捕获 “段错误”的信号
+  (gdb) handle SIGSEGV
+
+  抛出异常时捕获
+  (gdb) catch throw
+  
+  查看栈帧。
+  (gdb) where
+   
+  强制返回
+  (gdb) return 
+  程序直接从当前行跳转到 return 处。如果函数有返回值，则加在 return 命令之后。例如，　return 1。跳转中，栈平衡是自动维护的。修改程序代码段：
+By default, GDB opens the le containing your program's executable code (or the corele) read-only. This prevents accidental alterations to machine code; but it also prevents you fro
+---------------------------------------------------------------------------------------------------
+
+gdb$ set architecture i386:x86-64
+VMware Virtual Machine.  Add these to the .vmx file for the VM you to which you wish to attach:
+
+
+   debugStub.listen.guest32 = "TRUE"
+   debugStub.listen.guest64 = "TRUE"
+
+If your debugger is on a different host, you'll need to add:
+
+   debugStub.listen.guest32.remote = "TRUE"
+   debugStub.listen.guest64.remote = "TRUE"
+--------------------------------------------------------------------
+To turn logging to off, enter logging=false in the virtual machines .vmx file. 
+To turn logging back on, change logging=false to logging=true.
+
+You can also add these options by editing the VM’s .vmx file and add the following lines:
+log.rotateSize = “1000000”
+log.keepOld = “3”
+-----------------------------------------------------------
+Configure the named pipe on the target virtual machine and select This end is the server.
+Power on the virtual machine.
+Select the virtual machine, select VM > Removable Devices, and verify that the serial port is connected.
+If the serial port is not reported as \\.\pipe\namedpipe, select the virtual serial port and click Connect.
+On the host system, type the debugger command.
+For example: debugger -k com:port=\\.\pipe\namedpipe,pipe
+The debugger value is WinDbg or KD.
+Press Enter to start debugging.
+----------------------------------------------------------------------------------------------
+pt.enable = "TRUE"  Intel Processor trace support qq362505707
+pt.available = "TRUE"
+monitor.debugOnStartGuest64 = "TRUE"
+debugStub.listen.guest64 = "TRUE"                     # Enable listener for 64 bit guest
+debugStub.listen.guest64.remote = "TRUE"              # Allow remote connection (optional)
+debugStub.port.guest64 = "8864"                       # Listen on specified port NNN, e.g., 8864
+debugStub.hideBreakpoints= "TRUE"                     # Set hardware breakpoints -- limited by HW (optional)
+monitor.debugOnStartGuest32 = "TRUE"         # Breaks into debug stub on first instruction (warning: in BIOS!) # This will halt the VM at the very first instruction at 0xFFFF0, you could set the next breakpoint to break *0x7c00 to break when the bootloader is loaded by the BIOS
+debugStub.hideBreakpoints = "TRUE"         # Allows gdb breakpoints to work
+bios.bootDelay = "3000"             # Delay booting the BIOS code.
+$ gdb vmlinux
+
+(gdb) set architecture i386:x86-64
+(gdb) target remote localhost:8864
+(gdb) c
+bios.forceSetupOnce = "TRUE"
+bios.bootDelay = "xxxx" where xxxx is in millisecs (10E-03 secs).
+-------------------------------------------------------
+https://www.ece.villanova.edu/VECR/doc/gdb/Process-Record-and-Replay.html
+show record instruction-history-size
+record stop
+record save filename
+target record-full
+target record-instruction-history
+set record full insn-number-max limit Default value is 200000.
+set record full insn-number-max unlimited
+set record full stop-at-limit
+set record instruction-history-size size
+set record instruction-history-size unlimited
+record instruction-history
+record instruction-history insn
+	Disassembles ten instructions starting from instruction number insn.
+record instruction-history insn, +/-n
+	Disassembles n instructions around instruction number insn. If n is preceded with +, disassembles n instructions after instruction number insn. If n is preceded with -, disassembles n instructions before instruction number insn.
+record instruction-history
+	Disassembles ten more instructions after the last disassembly.
+record instruction-history -
+	Disassembles ten more instructions before the last disassembly.
+record instruction-history begin end
+	Disassembles instructions beginning with instruction number begin until instruction number end. The instruction number end is not included.
