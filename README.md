@@ -21,11 +21,15 @@ good luck.
   * .bin: game file for memory dump.
   * .idb: ida database file for 32 open use idb32.exe
   * .i64: ida database file for 64 open use idb64.exe
+### contact group
+- qq group: 1群 143824179 (IDA汇编逆向分析)
+- qq group: 2群 26318788 (romhacking)
 ### uefi and reverse analysis video demo
 - uefi readme https://github.com/zengfr/ida-pro-idb-database/tree/main/demo
 - uefi article https://my.oschina.net/zengfr/blog/5606084
 - uefi video   https://www.bilibili.com/video/BV1HG4y1V7Ym/
-### plugin for recommends
+### ida pro plugin for recommends
+- XrefsExt https://github.com/zengfr/XrefsExt
 - ida_all_xrefs_from_viewer https://github.com/zengfr/ida_all_xrefs_from_viewer-plugin-for-ida-pro
 - ida_all_xrefs_to_viewer https://github.com/zengfr/ida_all_xrefs_to_viewer-plugin-for-ida-pro
 - winhex_diff_viewer-plugin https://github.com/zengfr/winhex_diff_viewer-plugin-for-ida-pro
@@ -33,6 +37,8 @@ good luck.
 ### other link
 - game hacking romhack data: https://github.com/zengfr/romhack
 - game hacking video: https://space.bilibili.com/492484080
+### reverse-engineering-toolkit
+- https://github.com/zengfr/ida-pro-idb-database/blob/main/README_reverse-engineering-toolkit.md
 ### hacking基础资料全集
 - 卡普空cps1系统资料: https://github.com/zengfr/romhack/tree/master/CPS1
 - 拳皇neogeo系统资料: https://github.com/zengfr/romhack/tree/master/neogeo

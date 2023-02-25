@@ -1,0 +1,5 @@
+
+https://bbs.kanxue.com/thread-278370.htm
+
+
+设置：android:extractNativeLibs = true

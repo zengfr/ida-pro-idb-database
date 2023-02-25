@@ -1,0 +1,5 @@
+https://github.com/avelex/procmem/tree/main
+
+https://github.com/Xustyx/goxymemory/tree/master
+
+https://awesome-go.com/

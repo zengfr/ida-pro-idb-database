@@ -1,0 +1,25 @@
+
+
+https://github.com/synacktiv/bip
+https://github.com/mandiant/FIDL/blob/master/FIDL/decompiler_utils.py#L1027 is_global_var(ins): value_of_global(ins):
+
+https://sark.readthedocs.io/en/latest/
+https://sark.readthedocs.io/en/latest/plugins/xrefsgraph.html
+
+https://github.com/fireeye/FIDL
+https://github.com/arizvisa/ida-minsc
+
+ 
+ 
+ https://github.com/medigate-io/ida_medigate
+
+ida_medigate用于逆向C++的插件，用于辅助分析虚函数分发，支持虚函数的交叉引用识别。  
+
+https://github.com/tkmru/idapm
+
+idapm是IDA插件管理器，可以帮助用户完成棘手的插件管理任务：添加，删除，罗列插件。
+
+https://www.hex-rays.com/wp-content/static/contests_details/contest2020/PacXplorer/pacxplorer.zip
+
+PacXplorer支持分析ARM64 PAC指令，以提供一种新型的交叉引用：从调用方到虚拟函数，反之亦然。通过分析每个启用PAC的虚拟方法调用方，并使用在其中找到的信息来解析目标，对使用Apple的指针验证码(PAC)功能的任何二进制文件分析提供很大的帮助。
+ 

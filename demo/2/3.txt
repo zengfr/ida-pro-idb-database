@@ -1,0 +1,103 @@
+
+
+
+PyArmor-Unpacker
+https://www.52pojie.cn/thread-1684870-1-1.html
+https://github.com/call-042PE/PyInjector
+https://processhacker.sourceforge.io/ Process Hacker 2
+
+来源 网络 未知
+https://github.com/zengfr/ida-pro-idb-database/tree/main/demo/2
+
+import struct
+from hashlib import md5
+
+from Crypto.Cipher import AES
+
+
+pack32 = lambda num: struct.pack('<I', num)
+unpack32 = lambda data_bytes: struct.unpack('<I', data_bytes)[0]
+
+AES_BLOCK_SIZE = AES.block_size
+
+
+def aes_dec(aes_key: bytes, cur_pos: int, cipher_text: bytes):
+    buf_arr = []
+    tmp_iv = md5(aes_key).digest()
+    tmp_iv = bytes(map(lambda ch: ch ^ 0xa5, tmp_iv))
+    iv = tmp_iv[0:4] + pack32(cur_pos // AES_BLOCK_SIZE) + tmp_iv[4:0xc]
+    for i in range(0, len(cipher_text), AES_BLOCK_SIZE):
+        aes = AES.new(aes_key, mode=AES.MODE_OFB, IV=iv)
+        buf_arr.append(aes.decrypt(cipher_text[i:i + AES_BLOCK_SIZE]))
+        iv = iv[0:4] + pack32(unpack32(iv[4:8]) + 1) + iv[8:]
+    return b''.join(buf_arr)
+
+function traceCall() {
+    // 只关心ebook，先排除掉其他范围
+    let ebookModuleMap = new ModuleMap(function (mod) {
+        return mod.path.indexOf(ebookModName) != -1;
+    });
+    Process.enumerateRanges('--x').forEach(function (range) {
+        if (!ebookModuleMap.has(range.base)) {
+            Stalker.exclude(range);
+        }
+    });
+    // 追踪所有线程的调用
+    Process.enumerateThreads().forEach(function (thread) {
+            Stalker.follow(thread.id, {
+                events: {
+                    call: true, // CALL instructions: yes please
+                },
+                onReceive(events) {
+                    console.log(Stalker.parse(events, {
+                        annotate: true,
+                        stringify: true
+                    }));
+                },
+            })
+        }
+    )
+}
+
+function fopenTrace() {
+    Interceptor.attach(Module.getExportByName(null, 'fopen'), {
+        onEnter: function (args) {
+            this.path = args[0].readCString();
+        },
+        onLeave: function (retval) {
+            console.log(`fopen(${this.path})=>fd=${retval}`)
+        }
+    });
+    Interceptor.attach(Module.getExportByName(null, 'open'), {
+        onEnter: function (args) {
+            this.path = args[0].readCString();
+        },
+        onLeave: function (retval) {
+            console.log(`open(${this.path})=>fd=${retval}`)
+        }
+    });
+    Interceptor.attach(Module.getExportByName(null, 'openat'), {
+        onEnter: function (args) {
+            this.dirFd = args[0].toUInt32();
+            this.path = args[1].readCString();
+        },
+        onLeave: function (retval) {
+            console.log(`openat(${this.dirFd}, ${this.path})=>fd=${retval}`)
+        }
+    })
+}
+
+function signalTrace() {
+    Interceptor.attach(Module.getExportByName(null, 'gsignal'), {
+        onEnter: function (args) {
+            console.log(`gsignal(${args[0].toUInt32()})`);
+        }
+    });
+    Interceptor.attach(Module.getExportByName(null, 'raise'), {
+        onEnter: function (args) {
+            console.log(`raise(${args[0].toUInt32()})`);
+        }
+    });
+  //....
+}
+

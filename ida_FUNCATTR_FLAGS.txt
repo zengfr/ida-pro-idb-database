@@ -1,0 +1,11 @@
+
+idc.GetFunctionFlags(func) --> idc.get_func_attr(ea, FUNCATTR_FLAGS)
+FUNC_NORET 表示某个函数是否有返回值,本身的值是1,
+FUN_FAR 不常见,用于标志程序是否使用分段内存, 值为2
+FUN_USERFAR 不常见,官方文档描述为 "user has specified far-ness of the function" 它的值是 32
+FUN_LIB 表示用于寻找库函数的代码,它的值是4
+FUNC_STATIC 作用域是被该函数在编译的是否是一个静态函数, 在 c语言中静态函数被默认是认为全局的,如果作者吧这个函数定义为静态函数,那么这个函数只能被本文件中的函数访问.利用静态函数的判定我们可以更好地理解源代码的结构.
+FUNC_FRAME 表示函数是否使用了 ebp寄存器, 使用ebp寄存器的程序一般是windows 程序
+FUNC_BOTTOMBP 和 FUNC_FRAME 一样,用于跟着帧指针(ebp),它的作用是识别函数中帧指针是否等于堆栈指针 esp
+FUNC_HIDDEN 带有FUNC_HIDDEN 标志的函数意味着他们是隐藏的,这个函数需要展开才能查看
+FUNC_THUNK 表示这个函数是否是一个 thunk 函数, thunk 函数表示的是一个简单的跳转函数

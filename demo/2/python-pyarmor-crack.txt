@@ -1,0 +1,113 @@
+来源 网络 未知
+https://github.com/zengfr/ida-pro-idb-database/tree/main/demo/2
+文档分析
+​ 首先先看它的官方文档，这个作者还是特别好，对里面很多技术细节都有比较详细的描述，但是由于他方案的特性，这些描述只会更有利于逆向：
+
+加密模式	说明	分析
+加密模式	普通加密模式，会使用某(几)种算法对	就是对字节码部分进行了某种可逆的变换
+超级模式	字节码做变换，代码块结构会改变	代码块结构改变的意思应该是做了执行流的混淆
+终极模式	部分函数直接编译	可能类似Cython一样，这个过程是不可逆的(可逆向不可恢复)
+高级模式	对PyCode_Type结构进行修改	修改结构那么原始的代码都不能直接使用了，需要在那些地方下钩子去替换成自己的处理逻辑
+虚拟模式	核心库虚拟化保护	只支持windows意义不大，应该是用了VMProtect之类的方式对动态库加固了，其实通过操纵PVM也可以破解
+​ 除了加密外，它还支持对每个脚本指定约束，限制被保护的代码运行环境等，约束模式的分析如下：
+
+约束模式	说明	分析
+1	禁止修改脚本(默认)	加载时检查代码，要么源码要么字节码，应该是前者，方式可能是正则匹配
+2	只允许被主脚本是加密脚本的加密脚本导入或直接运行	检查frame链，要么上级为空要么整个链都是被加密了
+3	2基础上，约束模块的属性和函数只能被加密脚本访问	函数调用时检查frame，属性访问时设置钩子
+4	类似3，不限制主脚本是否加密	同上
+5	4基础上，限制外部函数访问加密函数的全局变量	没搞懂意思...，但是这应该是动态的
+100+	前5种和100的组合，100是字典约束，将禁止模块的字典访问行为	在字典访问上下钩子
+
+
+取巧方式破解
+​ 由于懒得分析，其实可以直接用钩子去解以加密为原理的所有算法，思路如下：
+
+在init_runtime的约束检查处打patch绕过检查
+在pyarmor的约束检查处打patch绕过检查
+执行__pyarmor__获取解密了外层的对象 ：在marshal_loads处获取解密后的内容，并且禁止执行它，从外层获取文件名，将其保存
+在__armor_enter__或__armor__的约束检查处打path绕过检查
+​ 先说明下，这种方式调用会违反它的约束检查，因此需要先bypass检查，当前有5个检查点，可通过改标志位来绕过，也可用frida直接hook返回值，之后直接用frida在marshal_loads_10082A90处下钩子就可以把外层解密的数据dump下来：
+
+function dumpPyArmor() {
+    let pyarmorImportAddr = pytransformBase.add(0x1200000 - pytransformImageBase)
+    Interceptor.attach(pyarmorImportAddr,
+        {
+            onEnter: function (args) {
+                // 先获取文件名
+                let fileName = args[3].readCString()
+                let path = "/dumps/" + fileName
+                // 再添加拦截器
+                let marshalLoadsRVA = 0x68742540 - pytransformImageBase
+                let marshalLoadsAddr = pytransformBase.add(marshalLoadsRVA);
+                console.log(`marshalLoadsAddr ${marshalLoadsAddr}`)
+
+                Interceptor.attach(marshalLoadsAddr, {  // dump文件，这里拿到的也是codeobject
+                    onEnter: function (args) {
+                        let bufAddr = this.context["eax"];
+                        let wantRead = this.context["edx"].toUInt32();
+                        pycBuf = ptr(bufAddr).readByteArray(wantRead)
+                        let buf = concatArrayBuffers(pycHeader, pycBuf)
+                        writeFile(path, buf)
+                    },
+                    onLeave: function (retVal) {
+                        // 防止被执行，这里修改它最外层的代码对象为直接返回
+                        let codeObject = ptr(retVal)
+                        if (codeObject == ptr(0)) {
+                            return
+                        }
+                        let coCodeAddr = codeObject.add(0x20).readPointer()
+                        coCodeAddr.add(0x10).writeByteArray([0x64, 0x00, 0x53, 0x00])  // 不让它执行 load 0 ret0
+}})}})}
+​ 通过这种方法，dump后可见之后模块里的代码被__armor_enter__和__armor_exit__包裹了：
+
+image.png
+​ 于是直接运行该代码块，在__armor_enter__的结束下钩子：
+
+// 这里处理__armor_enter__的操作
+function hookCrypt() {
+    let cryptAddr = pytransformBase.add(0x6874ABC0 - pytransformImageBase)
+    Interceptor.attach(cryptAddr, {
+        onEnter: function (args) {
+            let is_encrypt = args[0].toUInt32() == 1;
+            console.log(`is encrypt ${is_encrypt}`)
+            this.is_encrypt = is_encrypt
+            let codeAddr = ptr(this.context["edx"]);
+            let coCodeVal = getCodeBytes(codeAddr)
+            this.codeAddr = codeAddr
+            this.cipherText = coCodeVal
+            console.log(`flags :0x${codeAddr.add(0x18).readU32().toString(16)}`)
+        },
+        onLeave: function (retval) {
+            if (this.is_encrypt) return
+            console.log(`=====>        开始解密           <============`)
+            console.log(`解密前 :0x${hexdump(this.cipherText)}`)
+            patch(this.codeAddr)
+            let plainText = getCodeBytes(this.codeAddr)
+            console.log(`解密后：${hexdump(plainText)}`)
+            replaceArraryBufferAll(pycBuf, this.cipherText, plainText) 
+            console.log(`=============================================`)
+        }
+    })
+}
+​ 就能得到解密后的代码：
+
+image.png
+​ 有了如上的代码，再按照上文提到的方式对其进行修复，去掉首位多余的部分就可以反编译了。但是这有个副作用，就是原本的代码也会运行，对此的修复方式是修补__armor_enter__之后的指令，令其直接返回。至于如何触发所有的代码块，方式是直接递归遍历所有的co并使用exec去执行它：
+
+def triger_enter_code(code_object):
+  exec(code_object, {}, {}) 
+  # 注意这里当存在参数时，需要构造个跳板函数才能成功调用，参数个数通过co属性获取
+  '''import marshal
+     co=marshal.loads(bytes.fromhex(a))
+     s="""def a(x,y,z):
+         ...
+     a.__code__=co
+     a(1,2,3)
+     """
+     eval(s)
+    '''
+  code_consts = list(code_object.co_consts)
+  for i, const in enumerate(code_consts):
+    if isinstance(const, CodeType):
+      triger_enter_code(const)

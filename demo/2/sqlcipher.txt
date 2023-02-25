@@ -1,0 +1,98 @@
+
+来源 网络 未知
+https://github.com/zengfr/ida-pro-idb-database/tree/main/demo/2
+
+sqlcipher v3 使用AES256 CBC模式加密：
+
+把一个数据库分成多个chunk(也可以把它叫做page,默认大小为4kB)，每个chunk单独加密，显然password是相同的。
+不同的是，每个chunk有自己的iv，iv被存在每个chunk的末尾，另外每次写数据都会生成新的iv。
+对每个chunk，对iv与密文生成MAC(默认HMAC-SHA512)，读时做校验
+对每个数据库，会生成一个16B的盐，存储在文件开始处。加密密钥使用PBKDF2-HMAC-SHA512方式，默认迭代256000次。
+HMAC的key与加密的key不同，前者由后者使用PBKDF2进行二次迭代及一次交换生成。
+若为了显示魔数等信息而放弃对数据库头部加密，那么盐只能被存在外部，每次打开数据库时显式指出。
+其他。。。
+不过不重要，网上一通搜索知道了怎么用工具解密：
+
+sqlcipher-shell32.exe sk.db
+sqlite> PRAGMA KEY = 'exm';
+sqlite> ATTACH DATABASE 'sk_plaintext.db' AS plaintext KEY '';
+sqlite> SELECT sqlcipher_export('plaintext');
+通过全文搜索getEncryptedWritableDb或者getEncryptedreadableDb可以定位到获得加密数据库实力的代码处，回溯可以分析其密钥生成算法
+
+def generate_net_book_key(data: bytes):
+    data = md5(data).digest()
+    data = md5(data).hexdigest().upper()
+    return data.encode()
+	
+	  res = []
+    a_ascii, z_ascii, A_ascii, Z_ascii, zero_ascii, nine_ascii = map(ord, ('a', 'z', 'A', 'Z', '0', '9'))
+    for c in data:
+        if a_ascii <= c <= z_ascii:
+            c -= 3
+            c = c if c >= a_ascii else c + 26
+        elif A_ascii <= c <= Z_ascii:
+            c -= 3
+            c = c if c >= A_ascii else c + 26
+        elif zero_ascii <= c <= nine_ascii:
+            c -= 1
+            c = c if c >= zero_ascii else nine_ascii
+        res.append(c)
+    data = bytes(res)
+	
+	BILL_TABLE0 = b"n5Pr6St7Uv8Wx9YzAb0Cd1Ef2Gh3Jk4M"
+BILL_TABLE1 = b"AaZzB0bYyCc1XxDdW2wEeVv3FfUuG4g-TtHh5SsIiR6rJjQq7KkPpL8lOoMm9Nn_"
+
+
+def bill_decode(data: bytes):
+    result = b''
+    for c in BILL_TABLE0[:8]:
+        if data[0] == c:
+            table = BILL_TABLE0
+            break
+    else:
+        for c in BILL_TABLE1[:4]:
+            if data[0] == c:
+                table = BILL_TABLE1
+                break
+        else:
+            raise Exception('????')
+
+    for i in range(0, len(data) - 1, 2):
+        high = table.find(data[i])
+        low = table.find(data[i + 1])
+        if (high == -1) or (low == -1):
+            break
+        value = (((high * len(table)) ^ 0x80) & 0xFF) + low
+        result += byte(value)
+    return result
+	
+	IV = b'0000000000000000'
+
+def aes_pkcs7pad_decrypt(key: bytes, data: bytes):
+    key = sha256(key).digest()
+    cipher = AES.new(key, IV=IV, mode=AES.MODE_CBC)
+    plain = cipher.decrypt(data)
+    return pkcs7_unpad(plain)
+	
+	ld_get_data = PDFStream.get_data
+    old_get_filters = PDFStream.get_filters
+
+    def get_data(self):
+        old_filters = old_get_filters(self)
+        for (f, params) in old_filters:
+            if f.name == 'JDPDFENCRYPTBY360BUY':
+                try:
+                    self.rawdata = aes_pkcs7pad_decrypt(key, self.rawdata[:-1])
+                except Exception as e:
+                    print(e)
+        return old_get_data(self)
+
+    def get_filters(self):
+        old_filters = old_get_filters(self)
+        for (f, params) in old_filters:
+            if f.name == 'JDPDFENCRYPTBY360BUY':
+                old_filters.remove((f, params))
+        return old_filters
+
+    PDFStream.get_data = get_data
+    PDFStream.get_filters = get_filters
