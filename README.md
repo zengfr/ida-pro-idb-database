@@ -37,6 +37,7 @@ good luck.
 ### other link
 - game hacking romhack data: https://github.com/zengfr/romhack
 - game hacking video: https://space.bilibili.com/492484080
+- frida-codeshare-scripts: https://github.com/zengfr/frida-codeshare-scripts
 ### reverse-engineering-toolkit
 - https://github.com/zengfr/ida-pro-idb-database/blob/main/README_reverse-engineering-toolkit.md
 ### hacking基础资料全集

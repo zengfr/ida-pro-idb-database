@@ -1,0 +1,11 @@
+
+https://bbs.kanxue.com/thread-250481.htm
+https://github.com/asmjmp0/fridaMemoryAccessTrace/blob/master/index.js
+https://github.com/DoranekoSystems/frida-ceserver/tree/main/javascript
+https://github.com/Rob--/memoryjs/tree/master/examples
+https://github.com/DoranekoSystems/Tsubame
+https://github.com/nblog/frida-scan/blob/dev/aobscan/aobscan2.js
+
+
+http://91fans.com.cn/post/traceinfo/
+https://blog.csdn.net/fenfei331/article/details/123523182

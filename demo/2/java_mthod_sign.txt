@@ -1,0 +1,64 @@
+开发jni经常需要在jni层调用java层的方法，或者创建引用，这个时候就需要用到java的属性或者方法的签名，详细介绍如下：
+一 . java中8种基本数据类型签名：
+数据类型       签名
+
+char            C
+
+byte            B   
+
+short           S   
+
+int             I
+
+long            J
+
+double          D
+
+float           F
+
+boolean         Z
+二.java中8种包装类数据类型签名:
+Character   Ljava/lang/Character;
+
+Byte        Ljava/lang/Byte;
+
+Short       Ljava/lang/Short;
+
+Integer     Ljava/lang/Integer;
+
+Long        Ljava/lang/Long;
+
+Double      Ljava/lang/Double;
+
+Float       Ljava/lang/Float;
+
+Boolean     Ljava/lang/Boolean;
+三.类类型签名：
+L$;     $在实际使用过程中需要替换成类的全路径，并且需要把 . 替换为/
+四.方法签名：
+ ($1)$2     $1是每个参数的签名，中间不需要空格或者分割符
+
+            $2是方法的返回值签名
+五.
+1）数组签名
+
+
+    [$              $是每个数据类型的签名，其中不定长参数也用此方式处理
+
+2）特殊类型
+    
+    Map             Ljava/util/Map;
+
+    List            Ljava/util/List;
+六：最后补充一个void和泛型
+
+Void         Ljava/lang/Void;
+
+T            Ljava/lang/Object;
+七.需要注意的地方
+    1).类型的数据签名后面都有分号；而基本数据类型后面;
+
+    2).基本数据类型的包装类也是类类型，故也用类方式来处理
+
+    3).自定义类，不要忘记了最前面的L
+

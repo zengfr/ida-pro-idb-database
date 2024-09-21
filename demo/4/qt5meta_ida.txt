@@ -1,0 +1,118 @@
+
+void TsignalApp::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        TsignalApp *_t = static_cast<TsignalApp *>(_o);
+        switch (_id) {
+        case 0: _t->mySignal(); break;
+        case 1: _t->mySignal((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: _t->mySignalParam((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 3: _t->mySlot(); break;
+        case 4: _t->mySlot((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 5: _t->mySlotParam((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 6: { TsignalApp* _r = _t->mySlot2();
+            if (_a[0]) *reinterpret_cast< TsignalApp**>(_a[0]) = _r; }  break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {..
+    }
+}
+其中的_id是相应Qt方法（信号/槽等）的索引
+实际上，在编译后Qt程序中qt_meta_stringdata_TsignalApp和qt_meta_data_TsignalApp会被封装在另一个数据结构中，由Qt的源代码分析得，该结构为QMetaObject内部的结构体d：
+
+// qobjectdefs.h
+struct QMetaObject {
+    struct { // private data
+    const QMetaObject *superdata;
+    const QByteArrayData *stringdata;
+    const uint *data;
+    typedef void (*StaticMetacallFunction)(QObject *, QMetaObject::Call, int, void **);
+    StaticMetacallFunction static_metacall;
+    const QMetaObject * const *relatedMetaObjects;
+    void *extradata; //reserved for future use
+    } d;
+};
+在结构体由索引（index）得到对应的方法代码如下：
+
+// qmetaobject.cpp
+QMetaMethod QMetaObject::method(int index) const
+{
+    int i = index;
+    i -= methodOffset();
+    if (i < 0 && d.superdata)
+        return d.superdata->method(index);
+ 
+    QMetaMethod result;
+    if (i >= 0 && i < priv(d.data)->methodCount) {
+        result.mobj = this;
+        result.handle = priv(d.data)->methodData + 5*i;
+    }
+    return result;
+}
+d.data指向一个QMetaObjectPrivate对象。
+QMetaObjectPrivate的声明如下：
+// qmetaobject_p
+struct QMetaObjectPrivate {
+    enum { OutputRevision = 7 }; // Used by moc, qmetaobjectbuilder and qdbus
+ 
+    int revision;
+    int className;
+    int classInfoCount, classInfoData;
+    int methodCount, methodData;
+    int propertyCount, propertyData;
+    int enumeratorCount, enumeratorData;
+    int constructorCount, constructorData; //since revision 2
+    int flags; //since revision 3
+    int signalCount; //since revision 4
+}
+由QMetaObjectPrivate.methodData成员，可以确定QMetaMethod在d.data中的偏移，不考虑父类的情况下，索引为id的QMetaMethod在d.data的偏移为QMetaObjectPrivate.methodData + id * 5
+
+QMetaMethod
+QMetaMethod在Qt源代码中只保留QObject的指针及偏移量计算的代码，没有定义真正的结构体，为了方便，将结构体整理如下：
+
+struct QMetaMethod {
+    int name;
+    int parameterCount;  // 参数个数
+    int typesDataIndex;
+    int tag;
+    int flag;
+}
+获得方法名
+
+QMetaMethod其中的name和typesDataIndex都是其在d.stringdata[]的索引
+d.stringdata指向的类型为QByteArrayData，其定义为：
+
+typedef QArrayData QByteArrayData;
+ 
+// qarraydata.h
+struct QTypedArrayData
+    : QArrayData
+ 
+struct QArrayData
+{
+    QtPrivate::RefCount ref;
+    int size;
+    uint alloc : 31;
+    uint capacityReserved : 1;
+ 
+    qptrdiff offset; // 相对于QArrayData所在地址的偏移
+};
+由QArrayData.offset，我们可以计算C字符串的偏移，由QArrayData.size可以确定字符串的长度。
+至此，我们可以得到QMetaMethod的方法名。
+例如：设mth为QMetaMethod对象，通过d.stringdata[mth.name]获得QArrayData对象arr，则&arr + arr.offset处即为mth的方法名字符串。
+
+获得方法类型数据
+QMetaMethod.typesDataIndex是方法的类型数据偏移，其计算方式如下：
+偏移=d.data + QMetaMethod.typesDataIndex * 4
+知道类型数据偏移后，我们就可以得到QMetaMethod的类型
+确定QMetaObject.d位置
+以上对方法的解析前提是有QMetaObject.d的信息，下面来确定该位置。 实际上十分简单，Qt的元数据类型的签名为static const，也就是说只要在程序的.rdata段或者.data段查找如下形式的结构体即可：
+
+QMetaObject.d的主要特征是成员都是指什，superdata可以为null，因此找到连续三个的offset，且第4个成员为一函数指针，可以考虑为QMetaObject.d。
+
+破解Qt5程序的思路
+在错误信息上下断点，其所在函数err_func通常为槽。
+断下后跟踪到对应的static_metacall，确定err_func的索引idx
+解析QMetaObject.d，在d的data中查找idx对应的方法，解析方法的名称name
+在字符串引用中查找name（可能要加上SLOT、SINGAL前缀）的引用，确定Qt进行connect的信号
+查到对信号的引用，逆向完成破解
