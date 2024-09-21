@@ -1,0 +1,867 @@
+0x10494a0 0x7ff6b97894a0 print
+0x10494a8 0x7ff6b97894a8 ('Hello, World!',)
+0x10494b0 0x7ff6b97894b0 winfo_screenwidth
+0x10494b8 0x7ff6b97894b8 winfo_screenheight
+0x10494c0 0x7ff6b97894c0 2
+0x10494c8 0x7ff6b97894c8 geometry
+0x10494d0 0x7ff6b97894d0 
+0x10494d8 0x7ff6b97894d8 x
+0x10494e0 0x7ff6b97894e0 +
+0x10494e8 0x7ff6b97894e8 int
+0x10494f0 0x7ff6b97894f0 Format
+0x10494f8 0x7ff6b97894f8 0
+0x1049500 0x7ff6b9789500 xorfile1
+0x1049508 0x7ff6b9789508 len
+0x1049510 0x7ff6b9789510 10
+0x1049518 0x7ff6b9789518 pv
+0x1049520 0x7ff6b9789520 datimgbasefile
+0x1049528 0x7ff6b9789528 szbasefile
+0x1049530 0x7ff6b9789530 mlog
+0x1049538 0x7ff6b9789538 ('find img do',)
+0x1049540 0x7ff6b9789540 findFile_encodeimg
+0x1049548 0x7ff6b9789548 datpath
+0x1049550 0x7ff6b9789550 ('finish img do',)
+0x1049558 0x7ff6b9789558 1
+0x1049560 0x7ff6b9789560 doitfinish
+0x1049568 0x7ff6b9789568 win32api
+0x1049570 0x7ff6b9789570 MessageBox
+0x1049578 0x7ff6b9789578 \u56fe\u7247\u6570\u636e\u5904\u7406\u5b8c\u6210\uff0c\u8bf7\u767b\u5f55\u5fae\u4fe1\u68c0\u67e5\u3002
+0x1049580 0x7ff6b9789580 \u63d0\u793a
+0x1049588 0x7ff6b9789588 win32con
+0x1049590 0x7ff6b9789590 MB_OK
+0x1049598 0x7ff6b9789598 open
+0x10495a0 0x7ff6b97895a0 rb
+0x10495a8 0x7ff6b97895a8 __enter__
+0x10495b0 0x7ff6b97895b0 __exit__
+0x10495b8 0x7ff6b97895b8 read
+0x10495c0 0x7ff6b97895c0 (None, None, None)
+0x10495c8 0x7ff6b97895c8 bytearray
+0x10495d0 0x7ff6b97895d0 b
+0x10495d8 0x7ff6b97895d8 bytes
+0x10495e0 0x7ff6b97895e0 xo
+0x10495e8 0x7ff6b97895e8 chmod
+0x10495f0 0x7ff6b97895f0 stat
+0x10495f8 0x7ff6b97895f8 st_mode
+0x1049600 0x7ff6b9789600 146
+0x1049608 0x7ff6b9789608 remove
+0x1049610 0x7ff6b9789610 wb
+0x1049618 0x7ff6b9789618 write
+0x1049620 0x7ff6b9789620 join
+0x1049628 0x7ff6b9789628 dat_path
+0x1049630 0x7ff6b9789630 lower
+0x1049638 0x7ff6b9789638 [-4, None, None]
+0x1049640 0x7ff6b9789640 .dat
+0x1049648 0x7ff6b9789648 xorfile
+0x1049650 0x7ff6b9789650 imageDecode
+0x1049658 0x7ff6b9789658 findFile
+0x1049660 0x7ff6b9789660 (137, 80, 78)
+0x1049668 0x7ff6b9789668 (71, 73, 70)
+0x1049670 0x7ff6b9789670 (255, 216, 255)
+0x1049678 0x7ff6b9789678 a
+0x1049680 0x7ff6b9789680 [None, 3, None]
+0x1049688 0x7ff6b9789688 res
+0x1049690 0x7ff6b9789690 i
+0x1049698 0x7ff6b9789698 close
+0x10496a0 0x7ff6b97896a0 
+    \u8ba1\u7b97\u5f02\u6216\u503c
+    \u5404\u56fe\u7247\u5934\u90e8\u4fe1\u606f
+    jpeg\uff1aff d8 ff
+    png\uff1a89 50 4e 47
+    gif\uff1a 47 49 46 38
+        
+0x10496a8 0x7ff6b97896a8 logfile
+0x10496b0 0x7ff6b97896b0 w
+0x10496b8 0x7ff6b97896b8 ('start\r\n',)
+0x10496c0 0x7ff6b97896c0 a+
+0x10496c8 0x7ff6b97896c8 ('\r\n',)
+0x10496d0 0x7ff6b97896d0 jdapp
+0x10496d8 0x7ff6b97896d8 labeltext
+0x10496e0 0x7ff6b97896e0 config
+0x10496e8 0x7ff6b97896e8 ('text',)
+0x10496f0 0x7ff6b97896f0 subprocess
+0x10496f8 0x7ff6b97896f8 run
+0x1049700 0x7ff6b9789700 PIPE
+0x1049708 0x7ff6b9789708 ('taskkill /f /im WeChat.exe',)
+0x1049710 0x7ff6b9789710 ('shell', 'stdout', 'stderr', 'text')
+0x1049718 0x7ff6b9789718 stdout
+0x1049720 0x7ff6b9789720 ('doit()\r\n\\u5904\\u7406\\u6570\\u636e',)
+0x1049728 0x7ff6b9789728 decrytalldb
+0x1049730 0x7ff6b9789730 startdo1
+0x1049738 0x7ff6b9789738 time
+0x1049740 0x7ff6b9789740 sleep
+0x1049748 0x7ff6b9789748 (10,)
+0x1049750 0x7ff6b9789750 icount
+0x1049758 0x7ff6b9789758 str
+0x1049760 0x7ff6b9789760 mypath
+0x1049768 0x7ff6b9789768 find
+0x1049770 0x7ff6b9789770 ('MSG0.db-shm',)
+0x1049778 0x7ff6b9789778 encrytalldb
+0x1049780 0x7ff6b9789780 savepv
+0x1049788 0x7ff6b9789788 finish add: 
+0x1049790 0x7ff6b9789790  rows
+0x1049798 0x7ff6b9789798 range
+0x10497a0 0x7ff6b97897a0 (1, 30)
+0x10497a8 0x7ff6b97897a8 (1,)
+0x10497b0 0x7ff6b97897b0 30
+0x10497b8 0x7ff6b97897b8 s \u540e\u5b8c\u6210\uff0c\u8bf7\u7b49\u5f85\u3002
+0x10497c0 0x7ff6b97897c0 \u5b8c\u6210\u6570\u636e\u5904\u7406\u5171\uff1a
+0x10497c8 0x7ff6b97897c8 \u6761\uff0c\u8bf7\u767b\u5f55\u4f60\u81ea\u5df1\u7684\u5fae\u4fe1\uff0c\u67e5\u770b\u662f\u5426\u6210\u529f\uff0c\u5e76\u8fdb\u884c\u56fe\u7247\u6570\u636e\u5904\u7406\u3002
+0x10497d0 0x7ff6b97897d0 ('.db',)
+0x10497d8 0x7ff6b97897d8 decrydata1
+0x10497e0 0x7ff6b97897e0 input_pass
+0x10497e8 0x7ff6b97897e8 folder_path
+0x10497f0 0x7ff6b97897f0 salt
+0x10497f8 0x7ff6b97897f8 json
+0x1049800 0x7ff6b9789800 dumps
+0x1049808 0x7ff6b9789808 encode
+0x1049810 0x7ff6b9789810 ('utf-8',)
+0x1049818 0x7ff6b9789818 loads
+0x1049820 0x7ff6b9789820 decode
+0x1049828 0x7ff6b9789828 othersalt
+0x1049830 0x7ff6b9789830 16
+0x1049838 0x7ff6b9789838 hex
+0x1049840 0x7ff6b9789840 mysalt
+0x1049848 0x7ff6b9789848 type
+0x1049850 0x7ff6b9789850 getkeyexe
+0x1049858 0x7ff6b9789858 ('data.json', 'w')
+0x1049860 0x7ff6b9789860 dump
+0x1049868 0x7ff6b9789868 ('data.json', 126)
+0x1049870 0x7ff6b9789870 ('savepv write file err',)
+0x1049878 0x7ff6b9789878 wx2wx
+0x1049880 0x7ff6b9789880 softname
+0x1049888 0x7ff6b9789888 www.ms3688.com
+0x1049890 0x7ff6b9789890 serip
+0x1049898 0x7ff6b9789898 1.031
+0x10498a0 0x7ff6b97898a0 ver
+0x10498a8 0x7ff6b97898a8 \u6b23\u661f
+0x10498b0 0x7ff6b97898b0 copyright
+0x10498b8 0x7ff6b97898b8 tempfile
+0x10498c0 0x7ff6b97898c0 gettempdir
+0x10498c8 0x7ff6b97898c8 \ww2log.txt
+0x10498d0 0x7ff6b97898d0 offlinenumber
+0x10498d8 0x7ff6b97898d8 offlineserno
+0x10498e0 0x7ff6b97898e0 offlineregno
+0x10498e8 0x7ff6b97898e8 sqno
+0x10498f0 0x7ff6b97898f0 ('data.json', 'r')
+0x10498f8 0x7ff6b97898f8 load
+0x1049900 0x7ff6b9789900 32
+0x1049908 0x7ff6b9789908 fromhex
+0x1049910 0x7ff6b9789910 setbasepv
+0x1049918 0x7ff6b9789918 .enfile
+0x1049920 0x7ff6b9789920 enfile
+0x1049928 0x7ff6b9789928 blist
+0x1049930 0x7ff6b9789930 ('_win32sysloader.txt', 'w')
+0x1049938 0x7ff6b9789938 1024
+0x1049940 0x7ff6b9789940 b''
+0x1049948 0x7ff6b9789948 argv
+0x1049950 0x7ff6b9789950 hashlib
+0x1049958 0x7ff6b9789958 md5
+0x1049960 0x7ff6b9789960 hexdigest
+0x1049968 0x7ff6b9789968 http://
+0x1049970 0x7ff6b9789970 /regoff/getotherfile.asp?softname=
+0x1049978 0x7ff6b9789978 &oname=getkey&m=
+0x1049980 0x7ff6b9789980 requests
+0x1049988 0x7ff6b9789988 get
+0x1049990 0x7ff6b9789990 text
+0x1049998 0x7ff6b9789998 32770
+0x10499a0 0x7ff6b97899a0 replace
+0x10499a8 0x7ff6b97899a8 ('\r', '')
+0x10499b0 0x7ff6b97899b0 ('\n', '')
+0x10499b8 0x7ff6b97899b8 (' ', '')
+0x10499c0 0x7ff6b97899c0 ('',)
+0x10499c8 0x7ff6b97899c8 getcwd
+0x10499d0 0x7ff6b97899d0 \_win32sysloader.bin
+0x10499d8 0x7ff6b97899d8 getb_by_web
+0x10499e0 0x7ff6b97899e0 (2,)
+0x10499e8 0x7ff6b97899e8 b'MZ'
+0x10499f0 0x7ff6b97899f0 defile
+0x10499f8 0x7ff6b97899f8 \u64cd\u4f5c\u5931\u8d25\uff0c\u5982\u679c\u7f51\u7edc\u65e0\u6cd5\u8bbf\u95eehttp://
+0x1049a00 0x7ff6b9789a00 \uff0c
+
+\u8bf7\u5728\u53ef\u4ee5\u8bbf\u95ee\u7684\u7535\u8111\u4e0a\u8bbe\u7f6e\u5fae\u4fe1\u53f7\u540e\u590d\u5236data.json\u5230\u672c\u5730\uff0c
+
+\u8bf7\u68c0\u67e5\u7f51\u7edc\u5e76\u5173\u95ed\u9632\u62a4\u8f6f\u4ef6\u540e\u518d\u5c1d\u8bd5\u3002
+0x1049a08 0x7ff6b9789a08 split
+0x1049a10 0x7ff6b9789a10 ('\n',)
+0x1049a18 0x7ff6b9789a18 ('WeChat No Run',)
+0x1049a20 0x7ff6b9789a20 \u8bf7\u6253\u5f00\u5e76\u767b\u5f55\u5fae\u4fe1\uff0c\u65e0\u6cd5\u627e\u5230WeChat.exe
+0x1049a28 0x7ff6b9789a28 ('WeChat Is Run, But Maybe No Login',)
+0x1049a30 0x7ff6b9789a30 \u8bf7\u767b\u5f55\u5fae\u4fe1\u3002
+0x1049a38 0x7ff6b9789a38 ('WeChatVersion:',)
+0x1049a40 0x7ff6b9789a40 (' ',)
+0x1049a48 0x7ff6b9789a48 3
+0x1049a50 0x7ff6b9789a50 3.9.11.19
+0x1049a58 0x7ff6b9789a58 3.9.11.25
+0x1049a60 0x7ff6b9789a60 \u4e0d\u652f\u6301\u7684\u5fae\u4fe1\u7248\u672c\u3002\u76ee\u524d\u652f\u6301\u4ee5\u4e0b\u7248\u672c\uff1a
+3.9.11.25 \uff1a\u4e0b\u8f7d\u5730\u5740\uff1ahttp://www.ms3688.com/WeChatSetup_v3.9.11.25.exe
+3.9.11.19 \uff1a\u4e0b\u8f7d\u5730\u5740\uff1ahttp://www.ms3688.com/WeChatSetup_v3.9.11.19.exe
+
+3.9.0.28 3.9.2.23 3.9.2.26 3.9.5.91 3.9.6.19 3.9.6.33
+3.8.0.31 3.8.0.33 3.8.0.41 3.8.1.26
+3.7.0.26 3.7.0.29 3.7.0.30 3.7.5.11 3.7.5.23 3.7.5.27 3.7.5.31 3.7.6.24 3.7.6.29 3.7.6.44
+3.6.0.18 3.6.5.7 3.6.5.16
+3.5.0.20 3.5.0.29 3.5.0.33 3.5.0.39 3.5.0.42 3.5.0.44 3.5.0.46
+3.4.0.37 3.4.0.38 3.4.0.50 3.4.0.54 3.4.5.27 3.4.5.45
+3.3.0.11 3.3.0.84 3.3.0.93 3.3.5.34 3.3.5.42 3.3.5.46
+                        
+0x1049a68 0x7ff6b9789a68 WeChatKey
+0x1049a70 0x7ff6b9789a70 WeChatAccount
+0x1049a78 0x7ff6b9789a78 ('WeChatAccount:',)
+0x1049a80 0x7ff6b9789a80 ('WeChatKey:',)
+0x1049a88 0x7ff6b9789a88 64
+0x1049a90 0x7ff6b9789a90 wxpath
+0x1049a98 0x7ff6b9789a98 mywx
+0x1049aa0 0x7ff6b9789aa0 \Msg\Multi\
+0x1049aa8 0x7ff6b9789aa8 otherwx
+0x1049ab0 0x7ff6b9789ab0 otherpath
+0x1049ab8 0x7ff6b9789ab8 otherfilelist
+0x1049ac0 0x7ff6b9789ac0 ('\\u5904\\u7406\\u670b\\u53cb\\u5fae\\u4fe1\\u6570\\u636e\\u65f6\\u51fa\\u9519\\uff0c\\u8bf7\\u68c0\\u67e5\\u8bbe\\u7f6e',)
+0x1049ac8 0x7ff6b9789ac8 \u5904\u7406\u670b\u53cb\u5fae\u4fe1\u6570\u636e\u65f6\u51fa\u9519\uff0c\u8bf7\u68c0\u67e5\u8bbe\u7f6e
+0x1049ad0 0x7ff6b9789ad0 b"\xd9\xc0$aq\x98l\xdf\x98'q\x11\x8fo\x9c\xcd"
+0x1049ad8 0x7ff6b9789ad8 [-3, None, None]
+0x1049ae0 0x7ff6b9789ae0 .db
+0x1049ae8 0x7ff6b9789ae8 pdjm
+0x1049af0 0x7ff6b9789af0 (16,)
+0x1049af8 0x7ff6b9789af8 decrydata
+0x1049b00 0x7ff6b9789b00 otherkey
+0x1049b08 0x7ff6b9789b08 otherdo
+0x1049b10 0x7ff6b9789b10 myfilelist
+0x1049b18 0x7ff6b9789b18 mykey
+0x1049b20 0x7ff6b9789b20 mydo
+0x1049b28 0x7ff6b9789b28 SQLITE_FILE_HEADER
+0x1049b30 0x7ff6b9789b30 j
+0x1049b38 0x7ff6b9789b38 ('encrytalldb0() err',)
+0x1049b40 0x7ff6b9789b40 ('encrytalldb1() eror',)
+0x1049b48 0x7ff6b9789b48 makedirs
+0x1049b50 0x7ff6b9789b50 The directory 
+0x1049b58 0x7ff6b9789b58  is created.
+0x1049b60 0x7ff6b9789b60 src
+0x1049b68 0x7ff6b9789b68 dst
+0x1049b70 0x7ff6b9789b70 copy_directory
+0x1049b78 0x7ff6b9789b78 shutil
+0x1049b80 0x7ff6b9789b80 copy2
+0x1049b88 0x7ff6b9789b88 copy_directory error 
+0x1049b90 0x7ff6b9789b90  --> 
+0x1049b98 0x7ff6b9789b98 ('\\',)
+0x1049ba0 0x7ff6b9789ba0 sz
+0x1049ba8 0x7ff6b9789ba8 \
+0x1049bb0 0x7ff6b9789bb0 copy_directoryall
+0x1049bb8 0x7ff6b9789bb8 rename
+0x1049bc0 0x7ff6b9789bc0 [None, -2, None]
+0x1049bc8 0x7ff6b9789bc8 _wx2wx_bak
+0x1049bd0 0x7ff6b9789bd0 ('wx2wx bak already exsits',)
+0x1049bd8 0x7ff6b9789bd8 datfilelist
+0x1049be0 0x7ff6b9789be0 changedbfile
+0x1049be8 0x7ff6b9789be8 iall
+0x1049bf0 0x7ff6b9789bf0  
+0x1049bf8 0x7ff6b9789bf8 irec
+0x1049c00 0x7ff6b9789c00 sqlite3
+0x1049c08 0x7ff6b9789c08 connect
+0x1049c10 0x7ff6b9789c10 cursor
+0x1049c18 0x7ff6b9789c18 execute
+0x1049c20 0x7ff6b9789c20 ('SELECT * FROM MSG',)
+0x1049c28 0x7ff6b9789c28 fetchall
+0x1049c30 0x7ff6b9789c30 13
+0x1049c38 0x7ff6b9789c38 5
+0x1049c40 0x7ff6b9789c40 UPDATE MSG SET StrTalker='
+0x1049c48 0x7ff6b9789c48 ' WHERE localId = 
+0x1049c50 0x7ff6b9789c50 UPDATE MSG SET IsSender = 
+0x1049c58 0x7ff6b9789c58  WHERE localId = 
+0x1049c60 0x7ff6b9789c60 UPDATE MSG SET TalkerId = 1 WHERE localId = 
+0x1049c68 0x7ff6b9789c68 24
+0x1049c70 0x7ff6b9789c70 botherwx
+0x1049c78 0x7ff6b9789c78 (b'.',)
+0x1049c80 0x7ff6b9789c80 4
+0x1049c88 0x7ff6b9789c88 bmywx
+0x1049c90 0x7ff6b9789c90 to_bytes
+0x1049c98 0x7ff6b9789c98 (1, 'little')
+0x1049ca0 0x7ff6b9789ca0 ('img',)
+0x1049ca8 0x7ff6b9789ca8 [None, -4, None]
+0x1049cb0 0x7ff6b9789cb0 b'.dat'
+0x1049cb8 0x7ff6b9789cb8 copy_file_createallldstdir
+0x1049cc0 0x7ff6b9789cc0 ('media',)
+0x1049cc8 0x7ff6b9789cc8 copy file0 error 
+0x1049cd0 0x7ff6b9789cd0 newfile
+0x1049cd8 0x7ff6b9789cd8 b'.'
+0x1049ce0 0x7ff6b9789ce0 ('img2',)
+0x1049ce8 0x7ff6b9789ce8 ('media2',)
+0x1049cf0 0x7ff6b9789cf0 copy file1 error 
+0x1049cf8 0x7ff6b9789cf8 l1new
+0x1049d00 0x7ff6b9789d00 l2new
+0x1049d08 0x7ff6b9789d08 UPDATE MSG SET TalkerId = 2 WHERE localId = 
+0x1049d10 0x7ff6b9789d10 ('DELETE FROM Name2ID',)
+0x1049d18 0x7ff6b9789d18 commit
+0x1049d20 0x7ff6b9789d20 INSERT INTO [Name2ID]([rowid], [UsrName]) VALUES(1, '
+0x1049d28 0x7ff6b9789d28 ');
+0x1049d30 0x7ff6b9789d30 ('SELECT * FROM DBInfo',)
+0x1049d38 0x7ff6b9789d38 otherstarttime
+0x1049d40 0x7ff6b9789d40 otherstarttimelist
+0x1049d48 0x7ff6b9789d48 91721093025681
+0x1049d50 0x7ff6b9789d50 -1
+0x1049d58 0x7ff6b9789d58 tmp
+0x1049d60 0x7ff6b9789d60 MSG0.db
+0x1049d68 0x7ff6b9789d68 ('DELETE FROM MSG',)
+0x1049d70 0x7ff6b9789d70 1000
+0x1049d78 0x7ff6b9789d78 strcpydb0
+0x1049d80 0x7ff6b9789d80 myconn
+0x1049d88 0x7ff6b9789d88 add rec:
+0x1049d90 0x7ff6b9789d90 UPDATE DBInfo SET tableVersion = 
+0x1049d98 0x7ff6b9789d98  WHERE tableIndex = 1
+0x1049da0 0x7ff6b9789da0 :
+0x1049da8 0x7ff6b9789da8 INSERT INTO [MSG]([rowid], [localId], [TalkerId], [MsgSvrID], [Type], [SubType], [IsSender], [CreateTime], [Sequence], [StatusEx], [FlagEx], [Status], [MsgServerSeq], [MsgSequence], [StrTalker], [StrContent], [DisplayContent], [Reserved0], [Reserved1], [Reserved2], [Reserved3], [Reserved4], [Reserved5], [Reserved6], [CompressContent], [BytesExtra], [BytesTrans]) 
+0x1049db0 0x7ff6b9789db0 mytmpwx
+0x1049db8 0x7ff6b9789db8 ('here',)
+0x1049dc0 0x7ff6b9789dc0 VALUES(
+0x1049dc8 0x7ff6b9789dc8 ,
+0x1049dd0 0x7ff6b9789dd0 '
+0x1049dd8 0x7ff6b9789dd8 null
+0x1049de0 0x7ff6b9789de0 [1, None, None]
+0x1049de8 0x7ff6b9789de8 0
+0x1049df0 0x7ff6b9789df0 1
+0x1049df8 0x7ff6b9789df8 ssql
+0x1049e00 0x7ff6b9789e00 [None, -1, None]
+0x1049e08 0x7ff6b9789e08 );
+0x1049e10 0x7ff6b9789e10 sqlrecheader
+0x1049e18 0x7ff6b9789e18 mycursor
+0x1049e20 0x7ff6b9789e20 here
+0x1049e28 0x7ff6b9789e28 Z:\MediaMSG0.db
+0x1049e30 0x7ff6b9789e30 ('z:\\1.txt', 'r')
+0x1049e38 0x7ff6b9789e38 input_dir
+0x1049e40 0x7ff6b9789e40 ('SQLite format 3', 'ASCII')
+0x1049e48 0x7ff6b9789e48 ('encoding',)
+0x1049e50 0x7ff6b9789e50 4096
+0x1049e58 0x7ff6b9789e58 [None, 16, None]
+0x1049e60 0x7ff6b9789e60 pbkdf2_hmac
+0x1049e68 0x7ff6b9789e68 sha1
+0x1049e70 0x7ff6b9789e70 64000
+0x1049e78 0x7ff6b9789e78 58
+0x1049e80 0x7ff6b9789e80 hmac
+0x1049e88 0x7ff6b9789e88 new
+0x1049e90 0x7ff6b9789e90 {'digestmod': 'sha1'}
+0x1049e98 0x7ff6b9789e98 update
+0x1049ea0 0x7ff6b9789ea0 [None, -32, None]
+0x1049ea8 0x7ff6b9789ea8 c_int
+0x1049eb0 0x7ff6b9789eb0 digest
+0x1049eb8 0x7ff6b9789eb8 [-32, -12, None]
+0x1049ec0 0x7ff6b9789ec0 ('D Success',)
+0x1049ec8 0x7ff6b9789ec8 ('Password Err',)
+0x1049ed0 0x7ff6b9789ed0 DEFAULT_PAGESIZE
+0x1049ed8 0x7ff6b9789ed8 AES
+0x1049ee0 0x7ff6b9789ee0 MODE_CBC
+0x1049ee8 0x7ff6b9789ee8 [-48, -32, None]
+0x1049ef0 0x7ff6b9789ef0 decrypt
+0x1049ef8 0x7ff6b9789ef8 [None, -48, None]
+0x1049f00 0x7ff6b9789f00 [-48, None, None]
+0x1049f08 0x7ff6b9789f08 key
+0x1049f10 0x7ff6b9789f10 f
+0x1049f18 0x7ff6b9789f18 ('d k',)
+0x1049f20 0x7ff6b9789f20 ('d start',)
+0x1049f28 0x7ff6b9789f28 encrypt
+0x1049f30 0x7ff6b9789f30 [-12, None, None]
+0x1049f38 0x7ff6b9789f38 nblist
+0x1049f40 0x7ff6b9789f40 mac_key
+0x1049f48 0x7ff6b9789f48 mw
+0x1049f50 0x7ff6b9789f50 1048576
+0x1049f58 0x7ff6b9789f58 ('d o',)
+0x1049f60 0x7ff6b9789f60 ('FEEA7251DD7D4C65BE79B76CFBC5D5C81E43697B5F8248D18455C83714191613',)
+0x1049f68 0x7ff6b9789f68 from_bytes
+0x1049f70 0x7ff6b9789f70 [-2, None, None]
+0x1049f78 0x7ff6b9789f78 {'byteorder': 'big'}
+0x1049f80 0x7ff6b9789f80 b"\xd9\xc0$aq\x98\x8c\xdf\x98'q\x11\x8fo\x9c\xcd"
+0x1049f88 0x7ff6b9789f88 b'\x00'
+0x1049f90 0x7ff6b9789f90 (2, 'big', False)
+0x1049f98 0x7ff6b9789f98 ('length', 'byteorder', 'signed')
+0x1049fa0 0x7ff6b9789fa0 ('no wxpath',)
+0x1049fa8 0x7ff6b9789fa8 ('no otherkey',)
+0x1049fb0 0x7ff6b9789fb0 ('no mykey',)
+0x1049fb8 0x7ff6b9789fb8 ('no otherwx',)
+0x1049fc0 0x7ff6b9789fc0 ('no mywx',)
+0x1049fc8 0x7ff6b9789fc8 ('no otherpath',)
+0x1049fd0 0x7ff6b9789fd0 ('no mypath',)
+0x1049fd8 0x7ff6b9789fd8 regno
+0x1049fe0 0x7ff6b9789fe0 ('no regno',)
+0x1049fe8 0x7ff6b9789fe8 serno
+0x1049ff0 0x7ff6b9789ff0 ('no serno',)
+0x1049ff8 0x7ff6b9789ff8 datetime
+0x104a000 0x7ff6b978a000 date
+0x104a008 0x7ff6b978a008 today
+0x104a010 0x7ff6b978a010 ('-', '')
+0x104a018 0x7ff6b978a018 \u8bf7\u5c06\u4ee5\u4e0b\u94fe\u63a5\u83b7\u53d6\u6ce8\u518c\u7801\u548c\u6388\u6743\u7801(\u53ef\u4ee5\u9009\u62e9\u94fe\u63a5\u540eCtrl+C\u8fdb\u884c\u590d\u5236)\uff1a
+
+http://
+0x104a020 0x7ff6b978a020 /regoff/index_off.asp?softname=
+0x104a028 0x7ff6b978a028 &serno=
+0x104a030 0x7ff6b978a030 &t=
+0x104a038 0x7ff6b978a038 
+
+\u83b7\u53d6\u8f6f\u4ef6\u7684\u6ce8\u518c\u7801
+0x104a040 0x7ff6b978a040 easygui
+0x104a048 0x7ff6b978a048 msgbox
+0x104a050 0x7ff6b978a050 step40
+0x104a058 0x7ff6b978a058 [-32, None, None]
+0x104a060 0x7ff6b978a060 ('ook',)
+0x104a068 0x7ff6b978a068 ok
+0x104a070 0x7ff6b978a070 checkregokno
+0x104a078 0x7ff6b978a078 wmi
+0x104a080 0x7ff6b978a080 WMI
+0x104a088 0x7ff6b978a088 Win32_DiskDrive
+0x104a090 0x7ff6b978a090 disk_sn_list
+0x104a098 0x7ff6b978a098 SerialNumber
+0x104a0a0 0x7ff6b978a0a0 ('\\u9700\\u8981\\u8bbe\\u7f6e mywx',)
+0x104a0a8 0x7ff6b978a0a8 /regoff/checkreg.asp?softname=
+0x104a0b0 0x7ff6b978a0b0 &regno=
+0x104a0b8 0x7ff6b978a0b8 status_code
+0x104a0c0 0x7ff6b978a0c0 200
+0x104a0c8 0x7ff6b978a0c8 Failed to retrieve the url
+0x104a0d0 0x7ff6b978a0d0 \u8fde\u63a5\u7f51\u7edc\u8d85\u65f6\uff0c\u8bf7\u518d\u6b21\u5c1d\u8bd5\u3002(5-
+0x104a0d8 0x7ff6b978a0d8 )
+0x104a0e0 0x7ff6b978a0e0 \u9519\u8bef
+0x104a0e8 0x7ff6b978a0e8 offonlinecheck
+0x104a0f0 0x7ff6b978a0f0 ('noreg',)
+0x104a0f8 0x7ff6b978a0f8 error regno:
+\u8bf7\u5728\u53ef\u4ee5\u8bbf\u95ee\u7f51\u5740\u7684\u7535\u8111\u8bbf\u95ee\u4ee5\u4e0b\u7f51\u5740\u83b7\u53d6\u6ce8\u518c\u7801: http://
+0x104a100 0x7ff6b978a100 /regoff/index.asp?softname=
+0x104a108 0x7ff6b978a108 webbrowser
+0x104a110 0x7ff6b978a110 76
+0x104a118 0x7ff6b978a118 [2, 12, None]
+0x104a120 0x7ff6b978a120 [12, 44, None]
+0x104a128 0x7ff6b978a128 [None, 10, None]
+0x104a130 0x7ff6b978a130 [None, 7, None]
+0x104a138 0x7ff6b978a138 [None, 2, None]
+0x104a140 0x7ff6b978a140 d1
+0x104a148 0x7ff6b978a148 ('ok',)
+0x104a150 0x7ff6b978a150 d2
+0x104a158 0x7ff6b978a158 ('\\u6388\\u6743\\u7801\\u4f7f\\u7528\\u8d85\\u65f6', '\\u9519\\u8bef')
+0x104a160 0x7ff6b978a160 Tk
+0x104a168 0x7ff6b978a168 StringVar
+0x104a170 0x7ff6b978a170 set
+0x104a178 0x7ff6b978a178 ('\\u7f51\\u7ad9: ',)
+0x104a180 0x7ff6b978a180 ('\\u7ebf\\u7a0b\\uff1a',)
+0x104a188 0x7ff6b978a188 ('\\u76ee\\u524d\\uff1a',)
+0x104a190 0x7ff6b978a190 ('\\u603b\\u6570\\uff1a',)
+0x104a198 0x7ff6b978a198 ('\\u95f4\\u9694\\uff1a',)
+0x104a1a0 0x7ff6b978a1a0 title
+0x104a1a8 0x7ff6b978a1a8  @2024-2026.06 v
+0x104a1b0 0x7ff6b978a1b0 ('350x400',)
+0x104a1b8 0x7ff6b978a1b8 center_window
+0x104a1c0 0x7ff6b978a1c0 350
+0x104a1c8 0x7ff6b978a1c8 500
+0x104a1d0 0x7ff6b978a1d0 \vico.ico
+0x104a1d8 0x7ff6b978a1d8 iconbitmap
+0x104a1e0 0x7ff6b978a1e0 tk
+0x104a1e8 0x7ff6b978a1e8 Label
+0x104a1f0 0x7ff6b978a1f0 \u64cd\u4f5c\u5f15\u5bfc
+0x104a1f8 0x7ff6b978a1f8 ('Arial', 14)
+0x104a200 0x7ff6b978a200 300
+0x104a208 0x7ff6b978a208 nw
+0x104a210 0x7ff6b978a210 ('master', 'text', 'font', 'wraplength', 'anchor')
+0x104a218 0x7ff6b978a218 viewstart
+0x104a220 0x7ff6b978a220 pack
+0x104a228 0x7ff6b978a228 \u5f53\u524d\u503c\uff1a
+0x104a230 0x7ff6b978a230 ('Arial', 12)
+0x104a238 0x7ff6b978a238 Button
+0x104a240 0x7ff6b978a240   \u5148 \u8bbe \u7f6e \u5fae \u4fe1 \u7684 \u6570 \u636e \u76ee \u5f55   
+0x104a248 0x7ff6b978a248 step00
+0x104a250 0x7ff6b978a250 command
+0x104a258 0x7ff6b978a258 width
+0x104a260 0x7ff6b978a260 height
+0x104a268 0x7ff6b978a268 ('top',)
+0x104a270 0x7ff6b978a270 ('side',)
+0x104a278 0x7ff6b978a278 button1
+0x104a280 0x7ff6b978a280   \u4e0b \u4e00 \u6b65    
+0x104a288 0x7ff6b978a288 stepoperate
+0x104a290 0x7ff6b978a290 ioperation
+0x104a298 0x7ff6b978a298 Game Laucher
+0x104a2a0 0x7ff6b978a2a0 viewtxt
+0x104a2a8 0x7ff6b978a2a8 ('\\u8bbe\\u7f6e\\u5fae\\u4fe1\\u7684\\u6570\\u636e\\u76ee\\u5f55\\uff0c\\u901a\\u5e38\\u4e3a\\uff1aC:\\Users\\Administrator\\Documents\\WeChat Files\\uff0c\\u5982\\u679c\\u6539\\u53d8\\u4e86\\uff0c\\u8bf7\\u9009\\u62e9\\u6b63\\u5e38\\u76ee\\u5f55\\uff0c\\u901a\\u5e38\\u4ee5WeChat Files\\u7ed3\\u5c3e\\u3002',)
+0x104a2b0 0x7ff6b978a2b0   \u9000 \u51fa  
+0x104a2b8 0x7ff6b978a2b8 red
+0x104a2c0 0x7ff6b978a2c0 180
+0x104a2c8 0x7ff6b978a2c8 killexit
+0x104a2d0 0x7ff6b978a2d0 ('text', 'fg', 'width', 'command')
+0x104a2d8 0x7ff6b978a2d8 ('bottom',)
+0x104a2e0 0x7ff6b978a2e0 \u64cd\u4f5c\u8bf4\u660e \u4e0e \u66f4\u65b0
+0x104a2e8 0x7ff6b978a2e8 blue
+0x104a2f0 0x7ff6b978a2f0 using
+0x104a2f8 0x7ff6b978a2f8 \u6e05\u9664\u8bbe\u7f6e \u91cd\u65b0\u64cd\u4f5c
+0x104a300 0x7ff6b978a300 stepclear
+0x104a308 0x7ff6b978a308 \u7b2c\u4e00\u6b65
+0x104a310 0x7ff6b978a310 step000
+0x104a318 0x7ff6b978a318 mainloop
+0x104a320 0x7ff6b978a320    \u8bbe\u7f6e\u5bfc\u5165\u5fae\u4fe1\u53f7\uff08\u6ca1\u8bb0\u5f55\u7684\u5fae\u4fe1\uff09   
+0x104a328 0x7ff6b978a328 step1
+0x104a330 0x7ff6b978a330 normal
+0x104a338 0x7ff6b978a338 state
+0x104a340 0x7ff6b978a340 ('\\u64cd\\u4f5c\\u63d0\\u793a\\uff1a\r\n\\u5148\\u767b\\u5f55\\u9700\\u8981\\u5bfc\\u5165\\u7684\\u5fae\\u4fe1\\uff0c\\u7136\\u540e\\u70b9\\u51fb\\u4e0a\\u9762\\u6309\\u94ae\\u3002',)
+0x104a348 0x7ff6b978a348 ('\\u8bf7\\u5148\\u8bbe\\u7f6e\\u5bfc\\u5165\\u7684\\u5fae\\u4fe1\\u4fe1\\u606f\\uff0c\\u518d\\u8fdb\\u884c\\u4e0b\\u4e00\\u6b65', '\\u63d0\\u793a')
+0x104a350 0x7ff6b978a350    \u8bbe\u7f6e\u5bfc\u51fa\u5fae\u4fe1\u53f7\uff08\u6709\u8bb0\u5f55\u7684\u5fae\u4fe1\uff09   
+0x104a358 0x7ff6b978a358 step2
+0x104a360 0x7ff6b978a360 ('\\u64cd\\u4f5c\\u63d0\\u793a\\uff1a\r\n1\\u3001\\u9000\\u51fa\\u5bfc\\u5165\\u7684PC\\u5fae\\u4fe1,\r\n2\\u3001\\u767b\\u5f55\\u6709\\u8bb0\\u5f55\\u7684PC\\u5fae\\u4fe1\\uff0c\r\n3\\u3001\\u767b\\u5f55\\u5b8c\\u6210\\u540e\\u70b9\\u51fb\\u4e0a\\u9762\\u6309\\u94ae\\u3002\r\n(\\u5982\\u679c\\u624b\\u673a\\u5728\\u5f02\\u5730\\u8bf7\\u4e25\\u683c\\u53c2\\u7167\\u7f51\\u9875\\u6559\\u7a0b\\u64cd\\u4f5c)',)
+0x104a368 0x7ff6b978a368 ('\\u5bfc\\u5165\\u7684\\u5fae\\u4fe1\\u4fe1\\u606f\\u4e0d\\u80fd\\u4e0e\\u5bfc\\u51fa\\u7684\\u5fae\\u4fe1\\u4fe1\\u606f\\u4e00\\u6837\\uff0c\\u8bf7\\u70b9\\u91cd\\u65b0\\u8bbe\\u7f6e', '\\u63d0\\u793a')
+0x104a370 0x7ff6b978a370 ('\\u5bfc\\u51fa\\u7684\\u5fae\\u4fe1\\u4fe1\\u606f\\u4e0d\\u80fd\\u4e0e\\u5bfc\\u5165\\u7684\\u5fae\\u4fe1\\u4fe1\\u606f\\u4e00\\u6837\\uff0c\\u9700\\u8981\\u5207\\u6362\\u767b\\u5f55\\u5fae\\u4fe1\\u91cd\\u65b0\\u8bbe\\u7f6e', '\\u63d0\\u793a')
+0x104a378 0x7ff6b978a378 ('\\u8bf7\\u5148\\u8bbe\\u7f6e\\u5bfc\\u51fa\\u7684\\u5fae\\u4fe1\\u4fe1\\u606f\\uff0c\\u518d\\u8fdb\\u884c\\u4e0b\\u4e00\\u6b65', '\\u63d0\\u793a')
+0x104a380 0x7ff6b978a380    \u8fc1\u79fb\u670b\u53cb\u4e0e\u4f60\u7684\u804a\u5929\u8bb0\u5f55   
+0x104a388 0x7ff6b978a388 step3
+0x104a390 0x7ff6b978a390 disabled
+0x104a398 0x7ff6b978a398 ('\\u64cd\\u4f5c\\u63d0\\u793a\\uff1a\r\n1\\u3001\\u5728PC\\u4e0a\\u767b\\u5f55\\u6709\\u8bb0\\u5f55\\u7684\\u5fae\\u4fe1 2\\u3001\\u8fc1\\u79fb\\u8bb0\\u5f55\\u5230\\u7535\\u8111\\u64cd\\u4f5c: \\u624b\\u673a\\u5fae\\u4fe1-->\\u8fc1\\u79fb-->\\u8fc1\\u79fb\\u90e8\\u5206\\u804a\\u5929\\u8bb0\\u5f55-->\\u5f00\\u59cb\\u3002',)
+0x104a3a0 0x7ff6b978a3a0 ('\\u8fc1\\u79fb\\u670b\\u53cb\\u4e0e\\u4f60\\u7684\\u804a\\u5929\\u8bb0\\u5f55',)
+0x104a3a8 0x7ff6b978a3a8 22
+0x104a3b0 0x7ff6b978a3b0    \u83b7\u53d6\u8f6f\u4ef6\u7684\u6ce8\u518c\u7801   
+0x104a3b8 0x7ff6b978a3b8 ('\\u64cd\\u4f5c\\u63d0\\u793a\\uff1a\r\n\\u70b9\\u51fb\\u4e0a\\u9762\\u6309\\u94ae\\u3002\r\n\\u4e00\\u4e2a\\u6388\\u6743\\u7801\\u53ea\\u80fd\\u4f7f\\u7528\\u4e00\\u6b21\\uff0c\\u4f7f\\u7528\\u540e\\u8bf7\\u4fdd\\u5b58\\u597d\\u6ce8\\u518c\\u7801\\uff0c\\u4e22\\u5931\\u4e0d\\u8865\\u3002\r\n\\u901a\\u8fc7\\u6388\\u6743\\u7801\\u63d0\\u4ea4\\uff0c\\u83b7\\u53d6\\u6ce8\\u518c\\u7801.\r\n\\u5982\\u679c\\u5df2\\u7ecf\\u6709\\u6ce8\\u518c\\u7801\\u5219\\u201c\\u4e0b\\u4e00\\u6b65\\u201d',)
+0x104a3c0 0x7ff6b978a3c0    \u8bbe\u7f6e\u8f6f\u4ef6\u7684\u4f7f\u7528\u4fe1\u606f   
+0x104a3c8 0x7ff6b978a3c8 step4
+0x104a3d0 0x7ff6b978a3d0 ('\\u64cd\\u4f5c\\u63d0\\u793a\\uff1a\r\n\\u70b9\\u51fb\\u4e0a\\u9762\\u6309\\u94ae\\u3002\\u5982\\u679c\\u5df2\\u7ecf\\u5b8c\\u6210\\u5219\\u70b9\\u201c\\u4e0b\\u4e00\\u6b65\\u201d',)
+0x104a3d8 0x7ff6b978a3d8 \u6ce8\u518c\u7801\uff1a
+0x104a3e0 0x7ff6b978a3e0 checkreg
+0x104a3e8 0x7ff6b978a3e8 icheckreg:
+0x104a3f0 0x7ff6b978a3f0 ('\\u8bf7\\u5148\\u8bbe\\u7f6e\\u8f6f\\u4ef6\\u6b63\\u786e\\u7684\\u4f7f\\u7528\\u4fe1\\u606f\\uff0c\\u518d\\u8fdb\\u884c\\u4e0b\\u4e00\\u6b65', '\\u63d0\\u793a')
+0x104a3f8 0x7ff6b978a3f8    \u8fdb\u884c\u6838\u5fc3\u6570\u636e\u5904\u7406   
+0x104a400 0x7ff6b978a400 step5
+0x104a408 0x7ff6b978a408 ('\\u64cd\\u4f5c\\u63d0\\u793a\\uff1a\r\n\\u70b9\\u51fb\\u4e0a\\u9762\\u6309\\u94ae\\u3002\\u5982\\u679c\\u6570\\u636e\\u5927\\u7684\\u8bdd\\uff0c\\u5904\\u7406\\u65f6\\u95f4\\u4f1a\\u6bd4\\u8f83\\u957f\\uff0c\\u8bf7\\u8010\\u5fc3\\u7b49\\u5f85\\u5904\\u7406\\u76f4\\u5230\\u8f6f\\u4ef6\\u63d0\\u793a\\u5904\\u7406\\u5b8c\\u6210\\u3002',)
+0x104a410 0x7ff6b978a410 ('\\u8fdb\\u884c\\u6838\\u5fc3\\u6570\\u636e\\u5904\\u7406',)
+0x104a418 0x7ff6b978a418    \u8fdb\u884c\u56fe\u7247\u6570\u636e\u5904\u7406   
+0x104a420 0x7ff6b978a420 step61
+0x104a428 0x7ff6b978a428 ('\\u64cd\\u4f5c\\u63d0\\u793a\\uff1a\r\n1\\u3001\\u767b\\u5f55\\u81ea\\u5df1\\u7684pc\\u5fae\\u4fe1\\u30022\\u3001\\u5411\\u670b\\u53cb\\u4efb\\u610f\\u53d1\\u9001\\u4e00\\u5f20\\u56fe\\u7247\\u30023\\u3001\\u53d1\\u9001\\u5b8c\\u6210\\u540e\\u70b9\\u4e0a\\u9762\\u6309\\u94ae',)
+0x104a430 0x7ff6b978a430 ('\\u56fe\\u7247\\u5904\\u7406',)
+0x104a438 0x7ff6b978a438 6
+0x104a440 0x7ff6b978a440    \u8fc1\u79fb\u8bb0\u5f55\u5230\u624b\u673a   
+0x104a448 0x7ff6b978a448 step7
+0x104a450 0x7ff6b978a450 ('\\u64cd\\u4f5c\\u63d0\\u793a\\uff1a\r\n1\\u3001\\u767b\\u5f55PC\\u5fae\\u4fe1,\\u67e5\\u770b\\u804a\\u5929\\u8bb0\\u5f55\\u662f\\u5426\\u6b63\\u5e38\\u3002\r\n2\\u3001\\u8fc1\\u79fb\\u64cd\\u4f5c: \\u7535\\u8111\\u5fae\\u4fe1-->\\u8fc1\\u79fb-->\\u8fc1\\u79fb\\u90e8\\u5206\\u804a\\u5929\\u8bb0\\u5f55-->\\u5f00\\u59cb\\u3002',)
+0x104a458 0x7ff6b978a458 ('\\u767b\\u5f55PC\\u5fae\\u4fe1\\u3001\\u8fc1\\u79fb\\u8bb0\\u5f55',)
+0x104a460 0x7ff6b978a460 7
+0x104a468 0x7ff6b978a468 taskkill /f /im 
+0x104a470 0x7ff6b978a470 exit
+0x104a478 0x7ff6b978a478 (0,)
+0x104a480 0x7ff6b978a480 &oname=sm&v=
+0x104a488 0x7ff6b978a488 &m=
+0x104a490 0x7ff6b978a490 {'wxpath': 'C:\\Users\\Administrator\\Documents\\WeChat Files\\', 'otherwx': '', 'otherpath': '', 'otherkey': '', 'otherfilelist': [], 'othersalt': [], 'otherstarttime': [], 'otherdo': 0, 'mywx': '', 'mypath': '', 'mykey': '', 'myfilelist': [], 'mysalt': [], 'mydo': 0, 'regno': '', 'serno': '', 'checkreg': '', 'datfilelist': [], 'getkeyexe': b''}
+0x104a498 0x7ff6b978a498 expanduser
+0x104a4a0 0x7ff6b978a4a0 ('~',)
+0x104a4a8 0x7ff6b978a4a8 \Documents\WeChat Files\
+0x104a4b0 0x7ff6b978a4b0    \u8bbe \u7f6e \u5fae \u4fe1 \u76ee \u5f55 
+0x104a4b8 0x7ff6b978a4b8 filedialog
+0x104a4c0 0x7ff6b978a4c0 askdirectory
+0x104a4c8 0x7ff6b978a4c8 ('initialdir',)
+0x104a4d0 0x7ff6b978a4d0 ('/', '\\')
+0x104a4d8 0x7ff6b978a4d8 getkey
+0x104a4e0 0x7ff6b978a4e0 too many values to unpack (expected 2)
+0x104a4e8 0x7ff6b978a4e8 ('\\u8bf7\\u786e\\u5b9a\\u5fae\\u4fe1\\u662f\\u5426\\u5df2\\u7ecf\\u6253\\u5f00\\u6216\\u662f\\u5426\\u767b\\u5f55\\u6216\\u65e0\\u6cd5\\u8bc6\\u522b\\u7684\\u5fae\\u4fe1\\u7248\\u672c\\u3002\\u76ee\\u524d\\u652f\\u6301\\u4ee5\\u4e0b\\u7248\\u672c\\uff1a\n3.9.11.25 \\uff1a\\u4e0b\\u8f7d\\u5730\\u5740\\uff1ahttp://www.ms3688.com/WeChatSetup_v3.9.11.25.exe\n3.9.11.19 \\uff1a\\u4e0b\\u8f7d\\u5730\\u5740\\uff1ahttp://www.ms3688.com/WeChatSetup_v3.9.11.19.exe\n\n3.9.0.28 3.9.2.23 3.9.2.26 3.9.5.91 3.9.6.19 3.9.6.33\n3.8.0.31 3.8.0.33 3.8.0.41 3.8.1.26\n3.7.0.26 3.7.0.29 3.7.0.30 3.7.5.11 3.7.5.23 3.7.5.27 3.7.5.31 3.7.6.24 3.7.6.29 3.7.6.44\n3.6.0.18 3.6.5.7 3.6.5.16\n3.5.0.20 3.5.0.29 3.5.0.33 3.5.0.39 3.5.0.42 3.5.0.44 3.5.0.46\n3.4.0.37 3.4.0.38 3.4.0.50 3.4.0.54 3.4.5.27 3.4.5.45\n3.3.0.11 3.3.0.84 3.3.0.93 3.3.5.34 3.3.5.42 3.3.5.46\n                        ', '\\u9519\\u8bef\\u9000\\u51fa')
+0x104a4f0 0x7ff6b978a4f0 ('/',)
+0x104a4f8 0x7ff6b978a4f8   \u83b7\u53d6\u8f6f\u4ef6\u7684\u6388\u6743\u53f7\u7801  
+0x104a500 0x7ff6b978a500 ('\\u83b7\\u53d6\\u8f6f\\u4ef6\\u7684\\u6388\\u6743\\u53f7\\u7801\\uff0c\\u5b8c\\u6210\\u540e\\u70b9\\u51fb\\u4e0a\\u9762\\u6309\\u94ae\\u3002',)
+0x104a508 0x7ff6b978a508 ('\\u8bf7\\u91cd\\u65b0\\u8bbe\\u7f6e\\u5bfc\\u5165\\u5fae\\u4fe1\\u53f7', '\\u6ce8\\u610f')
+0x104a510 0x7ff6b978a510 \u8bf7\u4ece\u4ee5\u4e0b\u7f51\u7ad9(\u53ef\u4ee5\u9009\u62e9\u94fe\u63a5\u540eCtrl+C\u8fdb\u884c\u590d\u5236)\uff1a
+
+http://
+0x104a518 0x7ff6b978a518 
+
+\u83b7\u53d6\u8f6f\u4ef6\u7684\u4f7f\u7528\u53f7\u7801
+0x104a520 0x7ff6b978a520 \u6ce8\u610f
+0x104a528 0x7ff6b978a528   \u8bbe\u7f6e\u6388\u6743\u7801\u4fe1\u606f  
+0x104a530 0x7ff6b978a530 ('\\u83b7\\u53d6\\u6388\\u6743\\u7801\\u540e\\u70b9\\u51fb\\u4e0a\\u9762\\u6309\\u94ae\\u3002',)
+0x104a538 0x7ff6b978a538 \u8f6f\u4ef6\u5df2\u7ecf\u53ef\u4ee5\u6b63\u5e38\u4f7f\u7528\uff0c\u4e0d\u7528\u518d\u6b21\u83b7\u53d6\u3002
+
+\u83b7\u53d6URL(\u53ef\u4ee5\u9009\u62e9\u94fe\u63a5\u540eCtrl+C\u8fdb\u884c\u590d\u5236)\uff1a
+
+http://
+0x104a540 0x7ff6b978a540   \u8bbe\u7f6e\u8f6f\u4ef6\u4fe1\u606f  
+0x104a548 0x7ff6b978a548 ('\\u8bbe\\u7f6e\\u8f6f\\u4ef6\\u4fe1\\u606f\\u3002',)
+0x104a550 0x7ff6b978a550 \u8bbe\u7f6e\u8f6f\u4ef6\u7684\u4f7f\u7528\u4fe1\u606f
+0x104a558 0x7ff6b978a558 \u5e8f\u5217\u53f7:
+0x104a560 0x7ff6b978a560 \u6388\u6743\u7801:
+0x104a568 0x7ff6b978a568 \u6ce8\u518c\u7801:
+0x104a570 0x7ff6b978a570 eg
+0x104a578 0x7ff6b978a578 multenterbox
+0x104a580 0x7ff6b978a580 \u7b2c\u56db\u6b65\uff1a\u8bbe\u7f6e\u8f6f\u4ef6\u7684\u4f7f\u7528\u4fe1\u606f
+0x104a588 0x7ff6b978a588 fieldValues
+0x104a590 0x7ff6b978a590 fieldNames
+0x104a598 0x7ff6b978a598 strip
+0x104a5a0 0x7ff6b978a5a0 *
+0x104a5a8 0x7ff6b978a5a8 errmsg
+0x104a5b0 0x7ff6b978a5b0 \u3010%s\u3011\u4e3a\u5fc5\u586b\u9879\u3002
+
+
+0x104a5b8 0x7ff6b978a5b8 ('\\u9700\\u8981\\u8bbe\\u7f6e\\u4f60\\u5bfc\\u5165\\u7684\\u5fae\\u4fe1\\u53f7', '\\u9519\\u8bef')
+0x104a5c0 0x7ff6b978a5c0 ('serno\\u53f7\\u6ca1\\u6709\\u8bbe\\u7f6e', '\\u9519\\u8bef')
+0x104a5c8 0x7ff6b978a5c8 ('\\u6ce8\\u518c\\u7801\\u6ca1\\u6709\\u8bbe\\u7f6e', '\\u9519\\u8bef')
+0x104a5d0 0x7ff6b978a5d0 ('\\u6ce8\\u518c\\u6210\\u529f\\uff0c\\u53ef\\u4ee5\\u6b63\\u786e\\u4f7f\\u7528\\u4e86', '\\u6ce8\\u610f')
+0x104a5d8 0x7ff6b978a5d8 ('\\u6ce8\\u518c\\u4e0d\\u6210\\u529f\\uff0c\\u8bf7\\u68c0\\u6d4b\\u4f7f\\u7528\\u53f7\\u7801\\u662f\\u5426\\u6b63\\u786e\\u6216\\u91cd\\u8bd5\\u4e00\\u4e0b', '\\u9519\\u8bef')
+0x104a5e0 0x7ff6b978a5e0 text_widget
+0x104a5e8 0x7ff6b978a5e8 insert
+0x104a5f0 0x7ff6b978a5f0 END
+0x104a5f8 0x7ff6b978a5f8 see
+0x104a600 0x7ff6b978a600 ('Print to Tkinter',)
+0x104a608 0x7ff6b978a608 scrolledtext
+0x104a610 0x7ff6b978a610 ScrolledText
+0x104a618 0x7ff6b978a618 WORD
+0x104a620 0x7ff6b978a620 60
+0x104a628 0x7ff6b978a628 20
+0x104a630 0x7ff6b978a630 ('wrap', 'width', 'height')
+0x104a638 0x7ff6b978a638 BOTH
+0x104a640 0x7ff6b978a640 ('padx', 'pady', 'fill', 'expand')
+0x104a648 0x7ff6b978a648 PrintToTkinter
+0x104a650 0x7ff6b978a650 on_closing
+0x104a658 0x7ff6b978a658 redirect_print_to_tkinter.<locals>.on_closing
+0x104a660 0x7ff6b978a660 protocol
+0x104a668 0x7ff6b978a668 WM_DELETE_WINDOW
+0x104a670 0x7ff6b978a670 original_stdout
+0x104a678 0x7ff6b978a678 root
+0x104a680 0x7ff6b978a680 destroy
+0x104a688 0x7ff6b978a688 150
+0x104a690 0x7ff6b978a690 HourglassApp
+0x104a698 0x7ff6b978a698 ('start...',)
+0x104a6a0 0x7ff6b978a6a0 wm_attributes
+0x104a6a8 0x7ff6b978a6a8 ('-topmost', 1)
+0x104a6b0 0x7ff6b978a6b0 threading
+0x104a6b8 0x7ff6b978a6b8 ('Timer',)
+0x104a6c0 0x7ff6b978a6c0 Timer
+0x104a6c8 0x7ff6b978a6c8 \u8bf7\u786e\u5b9a\u9000\u51fa\u4e86\u7535\u8111\u5fae\u4fe1
+0x104a6d0 0x7ff6b978a6d0 viewsl
+0x104a6d8 0x7ff6b978a6d8 start
+0x104a6e0 0x7ff6b978a6e0 doit
+0x104a6e8 0x7ff6b978a6e8 ('\\u8bf7\\u6388\\u6743\\u540e\\u518d\\u6267\\u884c\\u8fd9\\u4e00\\u6b65', '\\u9519\\u8bef')
+0x104a6f0 0x7ff6b978a6f0 ('\\u64cd\\u4f5c\\u5df2\\u7ecf\\u5b8c\\u6210\\uff0c\\u5982\\u679c\\u6ca1\\u6709\\u6210\\u529f\\uff0c\\u8bf7\\u70b9\\u201c\\u91cd\\u65b0\\u64cd\\u4f5c\\u201d\\u3002', '\\u63d0\\u793a')
+0x104a6f8 0x7ff6b978a6f8 askopenfilename
+0x104a700 0x7ff6b978a700 Open a file
+0x104a708 0x7ff6b978a708 (('files', '*.*'), ('All files', '*.*'))
+0x104a710 0x7ff6b978a710 ('title', 'initialdir', 'filetypes')
+0x104a718 0x7ff6b978a718 filepath
+0x104a720 0x7ff6b978a720 findxorimgfile
+0x104a728 0x7ff6b978a728 s
+0x104a730 0x7ff6b978a730 \FileStorage\MsgAttach
+0x104a738 0x7ff6b978a738 (3,)
+0x104a740 0x7ff6b978a740 xoralldatfilelist
+0x104a748 0x7ff6b978a748 \u65e0\u6cd5\u5b9a\u4f4d\u89e3\u7801\u6570\u636e:
+0x104a750 0x7ff6b978a750 ('\r\n\\u65e0\\u6cd5\\u5b9a\\u4f4d\\u89e3\\u7801\\u6570\\u636e\\uff0c\r\n\r\n\\u8bf7\\u6253\\u5f00\\u5fae\\u4fe1\\u5411\\u670b\\u53cb\\u53d1\\u9001\\u4e00\\u5f20\\u56fe\\u7247\\u540e\\uff0c\\u9000\\u51fa\\u5fae\\u4fe1\\uff0c\\u518d\\u5c1d\\u8bd5\\u3002', '\\u56fe\\u7247\\u5904\\u7406\\u63d0\\u793a')
+0x104a758 0x7ff6b978a758 someimgpath
+0x104a760 0x7ff6b978a760 \FileStorage\Temp\"
+0x104a768 0x7ff6b978a768 select_file
+0x104a770 0x7ff6b978a770 \u56fe\u7247\u6570\u636e\u5904\u7406
+0x104a778 0x7ff6b978a778 \u67d0\u4e2a\u56fe\u7247\u6587\u4ef6:
+0x104a780 0x7ff6b978a780 \u7b2c\u516d\u6b65\uff1a\u56fe\u7247\u6570\u636e\u5904\u7406\u3002
+0x104a788 0x7ff6b978a788 ('\\u56fe\\u7247\\u6570\\u636e\\u5904\\u7406\\u5b8c\\u6210\\uff0c\\u8bf7\\u767b\\u5f55\\u5fae\\u4fe1\\u68c0\\u67e5', '\\u5b8c\\u6210')
+0x104a790 0x7ff6b978a790 ('\\u9700\\u8981\\u8bbe\\u7f6e\\u6587\\u4ef6', '\\u63d0\\u793a')
+0x104a798 0x7ff6b978a798 ('do...',)
+0x104a7a0 0x7ff6b978a7a0 ttk
+0x104a7a8 0x7ff6b978a7a8 {'text': '', 'font': ('Helvetica', 48)}
+0x104a7b0 0x7ff6b978a7b0 label
+0x104a7b8 0x7ff6b978a7b8 (20,)
+0x104a7c0 0x7ff6b978a7c0 ('pady',)
+0x104a7c8 0x7ff6b978a7c8 {'text': '1'}
+0x104a7d0 0x7ff6b978a7d0 (5,)
+0x104a7d8 0x7ff6b978a7d8 running
+0x104a7e0 0x7ff6b978a7e0 animation_thread
+0x104a7e8 0x7ff6b978a7e8 start_hourglass
+0x104a7f0 0x7ff6b978a7f0 \u23f3
+0x104a7f8 0x7ff6b978a7f8 \u231b
+0x104a800 0x7ff6b978a800 self
+0x104a808 0x7ff6b978a808 hourglass_states
+0x104a810 0x7ff6b978a810 state_index
+0x104a818 0x7ff6b978a818 (0.5,)
+0x104a820 0x7ff6b978a820 Thread
+0x104a828 0x7ff6b978a828 run_process
+0x104a830 0x7ff6b978a830 ('target',)
+0x104a838 0x7ff6b978a838 hourglass_animation
+0x104a840 0x7ff6b978a840 {'stream': True}
+0x104a848 0x7ff6b978a848 headers
+0x104a850 0x7ff6b978a850 ('content-length', 0)
+0x104a858 0x7ff6b978a858 newexesize
+0x104a860 0x7ff6b978a860 iter_content
+0x104a868 0x7ff6b978a868 (1024,)
+0x104a870 0x7ff6b978a870 file
+0x104a878 0x7ff6b978a878 progress_callback
+0x104a880 0x7ff6b978a880 total_size
+0x104a888 0x7ff6b978a888 100
+0x104a890 0x7ff6b978a890 progress_var
+0x104a898 0x7ff6b978a898 progress_bar
+0x104a8a0 0x7ff6b978a8a0 update_idletasks
+0x104a8a8 0x7ff6b978a8a8 downloadexe
+0x104a8b0 0x7ff6b978a8b0 url:
+0x104a8b8 0x7ff6b978a8b8 ('.py', '.exe')
+0x104a8c0 0x7ff6b978a8c0 .exe
+0x104a8c8 0x7ff6b978a8c8 -
+0x104a8d0 0x7ff6b978a8d0 download_file
+0x104a8d8 0x7ff6b978a8d8 update_progress
+0x104a8e0 0x7ff6b978a8e0 oldexe
+0x104a8e8 0x7ff6b978a8e8 newexe
+0x104a8f0 0x7ff6b978a8f0 new2oldexe
+0x104a8f8 0x7ff6b978a8f8 messagebox
+0x104a900 0x7ff6b978a900 showinfo
+0x104a908 0x7ff6b978a908 \u4e0b\u8f7d\u5b8c\u6210
+0x104a910 0x7ff6b978a910 \u6587\u4ef6 
+0x104a918 0x7ff6b978a918  \u4e0b\u8f7d\u5b8c\u6210\uff01
+0x104a920 0x7ff6b978a920 start_download
+0x104a928 0x7ff6b978a928 .py
+0x104a930 0x7ff6b978a930 st_size
+0x104a938 0x7ff6b978a938 2
+0x104a940 0x7ff6b978a940 /regoff/checkupdate.asp?softname=
+0x104a948 0x7ff6b978a948 &l=2026&sd=2024&m=
+0x104a950 0x7ff6b978a950 get md5: 
+0x104a958 0x7ff6b978a958 ('\\u4e0b\\u8f7d\\u65b0\\u672c\\u7248',)
+0x104a960 0x7ff6b978a960 422
+0x104a968 0x7ff6b978a968 IntVar
+0x104a970 0x7ff6b978a970 Progressbar
+0x104a978 0x7ff6b978a978 400
+0x104a980 0x7ff6b978a980 ('length', 'variable', 'maximum')
+0x104a988 0x7ff6b978a988 after
+0x104a990 0x7ff6b978a990 <lambda>
+0x104a998 0x7ff6b978a998 checkupate.<locals>.<lambda>
+0x104a9a0 0x7ff6b978a9a0 start_download_thread
+0x104a9a8 0x7ff6b978a9a8 /regoff/date.asp?s=
+0x104a9b0 0x7ff6b978a9b0 2026
+0x104a9b8 0x7ff6b978a9b8 2026-06
+0x104a9c0 0x7ff6b978a9c0 ('\\u9700\\u8981\\u65b0\\u672c\\u7248\\u3002', '\\u63d0\\u793a')
+0x104a9c8 0x7ff6b978a9c8 /index.asp?softname=
+0x104a9d0 0x7ff6b978a9d0 &ot=202606&lx=downnew&v
+0x104a9d8 0x7ff6b978a9d8 loadpv
+0x104a9e0 0x7ff6b978a9e0 ico
+0x104a9e8 0x7ff6b978a9e8 writeico
+0x104a9f0 0x7ff6b978a9f0 checktime
+0x104a9f8 0x7ff6b978a9f8 checkupate
+0x104aa00 0x7ff6b978aa00 firstrun
+0x104aa08 0x7ff6b978aa08 mianze
+0x104aa10 0x7ff6b978aa10 step0
+0x104aa18 0x7ff6b978aa18 multiprocessing.spawn
+0x104aa20 0x7ff6b978aa20 __nuitka_freeze_support.<locals>.<lambda>
+0x104aa28 0x7ff6b978aa28 spawn
+0x104aa30 0x7ff6b978aa30 _fixup_main_from_path
+0x104aa38 0x7ff6b978aa38 [2, None, None]
+0x104aa40 0x7ff6b978aa40 ('=',)
+0x104aa48 0x7ff6b978aa48 ValueError
+0x104aa50 0x7ff6b978aa50 pipe_handle
+0x104aa58 0x7ff6b978aa58 None
+0x104aa60 0x7ff6b978aa60 kwds
+0x104aa68 0x7ff6b978aa68 modules
+0x104aa70 0x7ff6b978aa70 __parents_main__
+0x104aa78 0x7ff6b978aa78 __main__
+0x104aa80 0x7ff6b978aa80 spawn_main
+0x104aa88 0x7ff6b978aa88 __doc__
+0x104aa90 0x7ff6b978aa90 __file__
+0x104aa98 0x7ff6b978aa98 __spec__
+0x104aaa0 0x7ff6b978aaa0 origin
+0x104aaa8 0x7ff6b978aaa8 has_location
+0x104aab0 0x7ff6b978aab0 __cached__
+0x104aab8 0x7ff6b978aab8 ('start',)
+0x104aac0 0x7ff6b978aac0 Crypto.Cipher
+0x104aac8 0x7ff6b978aac8 ('AES',)
+0x104aad0 0x7ff6b978aad0 ctypes
+0x104aad8 0x7ff6b978aad8 sys
+0x104aae0 0x7ff6b978aae0 getopt
+0x104aae8 0x7ff6b978aae8 os
+0x104aaf0 0x7ff6b978aaf0 ('sha256',)
+0x104aaf8 0x7ff6b978aaf8 sha256
+0x104ab00 0x7ff6b978ab00 tkinter.messagebox
+0x104ab08 0x7ff6b978ab08 tkinter
+0x104ab10 0x7ff6b978ab10 hello
+0x104ab18 0x7ff6b978ab18 ('*',)
+0x104ab20 0x7ff6b978ab20 jiami
+0x104ab28 0x7ff6b978ab28 IV_SIZE
+0x104ab30 0x7ff6b978ab30 HMAC_SHA1_SIZE
+0x104ab38 0x7ff6b978ab38 KEY_SIZE
+0x104ab40 0x7ff6b978ab40 DEFAULT_ITER
+0x104ab48 0x7ff6b978ab48 hk:d:
+0x104ab50 0x7ff6b978ab50 opts
+0x104ab58 0x7ff6b978ab58 args
+0x104ab60 0x7ff6b978ab60 save_dict_to_file
+0x104ab68 0x7ff6b978ab68 load_dict_from_file
+0x104ab70 0x7ff6b978ab70 ('SharpWxDump.exe',)
+0x104ab78 0x7ff6b978ab78 comb_by_file
+0x104ab80 0x7ff6b978ab80 getb
+0x104ab88 0x7ff6b978ab88 startdo0
+0x104ab90 0x7ff6b978ab90 test
+0x104ab98 0x7ff6b978ab98 checkpv
+0x104aba0 0x7ff6b978aba0 blviewpv
+0x104aba8 0x7ff6b978aba8 step21
+0x104abb0 0x7ff6b978abb0 ('scrolledtext',)
+0x104abb8 0x7ff6b978abb8 __module__
+0x104abc0 0x7ff6b978abc0 __qualname__
+0x104abc8 0x7ff6b978abc8 __init__
+0x104abd0 0x7ff6b978abd0 PrintToTkinter.__init__
+0x104abd8 0x7ff6b978abd8 PrintToTkinter.write
+0x104abe0 0x7ff6b978abe0 flush
+0x104abe8 0x7ff6b978abe8 PrintToTkinter.flush
+0x104abf0 0x7ff6b978abf0 redirect_print_to_tkinter
+0x104abf8 0x7ff6b978abf8 ('filedialog',)
+0x104ac00 0x7ff6b978ac00 checkimgfile
+0x104ac08 0x7ff6b978ac08 step6
+0x104ac10 0x7ff6b978ac10 ('ttk',)
+0x104ac18 0x7ff6b978ac18 HourglassApp.__init__
+0x104ac20 0x7ff6b978ac20 HourglassApp.hourglass_animation
+0x104ac28 0x7ff6b978ac28 HourglassApp.start_hourglass
+0x104ac30 0x7ff6b978ac30 HourglassApp.run_process
+0x104ac38 0x7ff6b978ac38 stop_process
+0x104ac40 0x7ff6b978ac40 HourglassApp.stop_process
+0x104ac48 0x7ff6b978ac48 main
+0x104ac50 0x7ff6b978ac50 __nuitka_freeze_support
+0x104ac58 0x7ff6b978ac58 wx2wx.py
+0x104ac60 0x7ff6b978ac60 ('mod_name',)
+0x104ac68 0x7ff6b978ac68 <module __parents_main__>
+0x104ac70 0x7ff6b978ac70 ('f', 'dat_r', 'a', 'now', 'xor', 'i', 'res', 'nowg', 'nowByte')
+0x104ac78 0x7ff6b978ac78 ('self', 'root', 'labeltext')
+0x104ac80 0x7ff6b978ac80 ('self', 'text_widget')
+0x104ac88 0x7ff6b978ac88 ('sys', 'multiprocessing', 'kwds', 'args', 'arg', 'name', 'value')
+0x104ac90 0x7ff6b978ac90 ('root', 'width', 'height', 'screen_width', 'screen_height', 'x', 'y')
+0x104ac98 0x7ff6b978ac98 ('dbfile', 'conn', 'cursor', 'rows', 'irec', 'sqlrecheader', 'mytmpwx', 'bmywx', 'botherwx', 'row', 'isSender', 'sql', 'l1', 'l1e', 'l1old', 'l1new', 'l1lennew', 'oldfile', 'newfile', 'l2', 'l2e', 'l2old', 'l2new', 'l2lennew', 'blob_data', 'l1lenloc', 'l2lenloc', 'e')
+0x104aca0 0x7ff6b978aca0 ('x',)
+0x104aca8 0x7ff6b978aca8 ('c', 'disk_sn_list', 'physical_disk', 'serno', 'url', 'content', 'response', 'i', 'limitday', 'szrnd', 'szjy', 's', 'md', 'current_date')
+0x104acb0 0x7ff6b978acb0 ('blexit', 'f', 'blist', 'c', 'md', 'url', 'r', 'current_date')
+0x104acb8 0x7ff6b978acb8 ('file_size1', 'i', 'command', 'result', 'sz', 'file_size2', 'f', 'blist', 'c', 'md', 'url', 'r', 'root', 'icofile')
+0x104acc0 0x7ff6b978acc0 ('szfile', 'blist', 'f', 'cc')
+0x104acc8 0x7ff6b978acc8 ('src', 'dst', 'item', 's', 'd')
+0x104acd0 0x7ff6b978acd0 ('src', 'dst', 'item', 's', 'd', 'i')
+0x104acd8 0x7ff6b978acd8 ('src', 'dst', 'b', 'sz', 'i', 'x', 'j')
+0x104ace0 0x7ff6b978ace0 ('input_pass', 'input_dir', 'SQLITE_FILE_HEADER', 'IV_SIZE', 'HMAC_SHA1_SIZE', 'KEY_SIZE', 'DEFAULT_PAGESIZE', 'DEFAULT_ITER', 'password', 'f', 'blist', 'oblist', 'salt', 'key', 'first', 'mac_salt', 'mac_key', 'hash_mac', 't', 'j', 'i')
+0x104ace8 0x7ff6b978ace8 ('input_pass', 'input_dir', 'salt', 'SQLITE_FILE_HEADER', 'IV_SIZE', 'HMAC_SHA1_SIZE', 'KEY_SIZE', 'DEFAULT_PAGESIZE', 'DEFAULT_ITER', 'icount', 'password', 'nblist', 'f', 'blist', 'key', 'first', 'mac_salt', 'mac_key', 't', 'mw', 'hash_mac', 'c', 'j', 'i')
+0x104acf0 0x7ff6b978acf0 ('x', 'blist', 'f', 'inojm')
+0x104acf8 0x7ff6b978acf8 ('input_dir', 'input_pass', 'IV_SIZE', 'HMAC_SHA1_SIZE', 'KEY_SIZE', 'DEFAULT_PAGESIZE', 'DEFAULT_ITER', 'password', 'f', 'blist', 'addbytes', 'salt', 'key', 'first', 'mac_salt', 't', 'i')
+0x104ad00 0x7ff6b978ad00 ('command', 'result', 'sz', 'irec', 'icount', 'l', 'i')
+0x104ad08 0x7ff6b978ad08 ('url', 'local_filename', 'progress_callback', 'response', 'total_size', 'block_size', 'icount', 'file', 'data')
+0x104ad10 0x7ff6b978ad10 ('j', 'x')
+0x104ad18 0x7ff6b978ad18 ('input_dir', 'input_pass', 'IV_SIZE', 'HMAC_SHA1_SIZE', 'KEY_SIZE', 'DEFAULT_PAGESIZE', 'DEFAULT_ITER', 'icount', 'password', 'nblist', 'f', 'blist', 'addbyte', 'salt', 'key', 'first', 'mac_salt', 't', 'mw', 'i')
+0x104ad20 0x7ff6b978ad20 ('dat_path', 'fsinfo', 'dat_file_name', 'temp_path')
+0x104ad28 0x7ff6b978ad28 ('dat_path', 'xo', 'fsinfo', 'dat_file_name', 'temp_path')
+0x104ad30 0x7ff6b978ad30 ('filepath', 'a', 's', 'item')
+0x104ad38 0x7ff6b978ad38 ('self',)
+0x104ad40 0x7ff6b978ad40 ('cc', 'cc1', 'b')
+0x104ad48 0x7ff6b978ad48 ('b', 'f', 'blist', 'c', 'md', 'url', 'r', 'cc', 'cc1')
+0x104ad50 0x7ff6b978ad50 ('WeChatKey', 'WeChatAccount', 'command', 'b', 'f', 'blist', 'szts', 'result', 'sz', 'k', 'x', 'blweixinverok', 'k1')
+0x104ad58 0x7ff6b978ad58 ('self', 'hourglass_states', 'state_index')
+0x104ad60 0x7ff6b978ad60 ('f', 'out', 'xo', 'i')
+0x104ad68 0x7ff6b978ad68 ('folder_path', 'salt', 'filenames', 'x')
+0x104ad70 0x7ff6b978ad70 ('command', 'result', 'sz')
+0x104ad78 0x7ff6b978ad78 ('file_path', 'file', 'byte_data', 'dict_data')
+0x104ad80 0x7ff6b978ad80 ('p', 'f', 'i', 'j')
+0x104ad88 0x7ff6b978ad88 ('icofile', 'command', 'result', 'sz')
+0x104ad90 0x7ff6b978ad90 ('sz', 'f', 'i')
+0x104ad98 0x7ff6b978ad98 ('serno', 'szday', 'sz', 'szrnd', 'offlineregnomd5', 's', 'md1', 'md')
+0x104ada0 0x7ff6b978ada0 ('original_stdout', 'root')
+0x104ada8 0x7ff6b978ada8 ('dbfile', 'f', 'blist')
+0x104adb0 0x7ff6b978adb0 ('original_stdout', 'root', 'text_area', 'on_closing')
+0x104adb8 0x7ff6b978adb8 ('self', 'animation_thread')
+0x104adc0 0x7ff6b978adc0 ('dict_data', 'file_path', 'file', 'byte_data')
+0x104adc8 0x7ff6b978adc8 ('p', 'i', 'f')
+0x104add0 0x7ff6b978add0 ('initialdir', 'filetypes', 'filename')
+0x104add8 0x7ff6b978add8 ('url', 'filename', 'command', 'result', 'sz')
+0x104ade0 0x7ff6b978ade0 ('download_thread',)
+0x104ade8 0x7ff6b978ade8 ('x', 'starttime', 'conn', 'cursor', 'rows', 'j', 'k', 'tmp', 'i', 'myfiledb', 'myconn', 'mycursor', 'irec', 'myrows', 'newtime', 'iall')
+0x104adf0 0x7ff6b978adf0 ('os', 'iall', 'irec', 'x', 'dbtmpfile')
+0x104adf8 0x7ff6b978adf8 ('master', 'url_label', 'threadnumber_label', 'cthreadnumber_label', 'counter_label', 'cnum_label', 'timesplit_label', 'icofile', 'hi_there', 'sm', 'bquit', 'start')
+0x104ae00 0x7ff6b978ae00 ('msg', 'title', 'fieldNames', 'fieldValues', 'directory', 'errmsg', 'i', 'option')
+0x104ae08 0x7ff6b978ae08 ('sm',)
+0x104ae10 0x7ff6b978ae10 ('userid', 'mkey', 'szts', 'directory', 'answer', 'msg', 'title', 'fieldNames', 'fieldValues', 'errmsg', 'i', 'option', 'c', 'disk_sn_list', 'physical_disk', 'serno')
+0x104ae18 0x7ff6b978ae18 ('userid', 'mkey', 'szts', 'directory', 'answer', 'msg', 'title', 'fieldNames', 'fieldValues', 'errmsg', 'i', 'option', 'sm')
+0x104ae20 0x7ff6b978ae20 ('url', 'sm')
+0x104ae28 0x7ff6b978ae28 ('msg', 'title', 'fieldNames', 'fieldValues', 'errmsg', 'i', 'option')
+0x104ae30 0x7ff6b978ae30 ('Timer', 'i', 'timer')
+0x104ae38 0x7ff6b978ae38 ('tmp', 'msg', 'title', 'fieldNames', 'fieldValues', 'errmsg', 'i', 'option')
+0x104ae40 0x7ff6b978ae40 ('a', 's', 'Timer', 'timer')
+0x104ae48 0x7ff6b978ae48 ('sm', 'icheckreg')
+0x104ae50 0x7ff6b978ae50 ('dbfile', 'myconn', 'irec', 'mycursor', 'conn', 'cursor', 'rows', 'row', 'sqlrecheader', 'mytmpwx', 'row1', 'ssql', 'j', 'x', 'sx', 'sql')
+0x104ae58 0x7ff6b978ae58 ('input_dir', 'f', 'blist', 's', 'x', 'salt')
+0x104ae60 0x7ff6b978ae60 ('received', 'total', 'percent')
+0x104ae68 0x7ff6b978ae68 ('f', 'blist', 'c', 'md', 'url')
+0x104ae70 0x7ff6b978ae70 ('root', 'app', 'icofile')
+0x104ae78 0x7ff6b978ae78 ('self', 'message')
+0x104ae80 0x7ff6b978ae80 ('szbasefile', 'xo')
+0x104ae88 0x7ff6b978ae88 ('filename', 'xo', 'oldxo', 'f', 'b', 'w', 'data')
+0x104ae90 0x7ff6b978ae90 ('filename', 'xo', 'f', 'b', 'w', 'data')

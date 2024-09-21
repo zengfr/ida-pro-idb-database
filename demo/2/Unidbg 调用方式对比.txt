@@ -1,0 +1,80 @@
+
+https://www.52pojie.cn/thread-1800905-1-1.html
+Unidbg 调用方式对比
+1、 签名调用
+ 复制代码 隐藏代码
+// 调用方法 StringObject---unidbg中
+StringObject obj = cls.callStaticJniMethodObject(
+    emulator,
+    "get3desKey(Landroid/content/Context;)Ljava/lang/String;",
+    ctxObject
+);
+2、callFunction 调用
+2.1  基于符号的调用
+vm.addLocalObject(vm.resolveClass("com/yoloho/libcore/util/Crypt"))
+实现了把这个类的hash和内容 放入vm中
+number 类似内存地址
+int result = number.intValue();  //得到内存地址
+vm.getObject(result) //得到一个Unidbg中的StringObject  或者其他的Unidbg对象
+vm.getObject(result).getValue() // 得到一个java中的String对象
+ 复制代码 隐藏代码
+Number number = module.callFunction(
+    emulator,
+    "Java_com_yoloho_libcore_util_Crypt_encrypt_1data",
+    vm.getJNIEnv(),
+    //vm.addLocalObject(vm.resolveClass("com/yoloho/libcore/util/Crypt").newObject(null)),
+    vm.addLocalObject(vm.resolveClass("com/yoloho/libcore/util/Crypt")),
+    0,
+    vm.addLocalObject(new StringObject(vm, "64e6176e45397c5989504eHjtL0AQ==")),
+    85
+);
+int result = number.intValue();
+String v = (String) vm.getObject(result).getValue();
+System.out.println(v);
+image-20230621143307974
+
+image-20230621143629456
+
+2.2 基于偏移量的调用
+直接写偏移量进行调用.
+如果是32位的so文件  偏移量要+1
+ 复制代码 隐藏代码
+Number number = module.callFunction(
+        emulator,
+        0x2414,
+        vm.getJNIEnv(),
+        vm.addLocalObject(vm.resolveClass("com/yoloho/libcore/util/Crypt")),
+        0,
+        vm.addLocalObject(new StringObject(vm, "64e6176e45397c5...lKpHjtL0AQ==")),
+        85
+);
+int result = number.intValue();
+String v = (String) vm.getObject(result).getValue();
+System.out.println(v);
+3、执行so文件中C函数
+ 复制代码 隐藏代码
+ public void call_1() {
+        int v7 = 0;
+
+        UnidbgPointer v9 = memory.malloc(100, false).getPointer();
+        v9.write("64e6176e45397c5989504e76f98ecf2e63b2679euser/login15131255555A4rE0CKaCsUMlKpHjtL0AQ==".getBytes());
+
+        int v8 = 85;
+
+        UnidbgPointer v11 = memory.malloc(100, false).getPointer();
+
+        module.callFunction(
+                emulator,
+                0x1DA0,
+                v7,
+                v9,
+                v8,
+                v11
+        );
+
+        System.out.println(v11.getString(0));
+        // byte[] bArr = v11.getByteArray(0,100);
+        // Inspector.inspect(bArr,"结果");
+    }
+
+

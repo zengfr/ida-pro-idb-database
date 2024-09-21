@@ -1,0 +1,884 @@
+https://github.com/zengfr/ida-pro-idb-database/tree/main/demo
+
+0x10475b0 0x7ff6b97875b0 print
+0x10475b8 0x7ff6b97875b8 ('Hello, World!',)
+0x10475c0 0x7ff6b97875c0 winfo_screenwidth
+0x10475c8 0x7ff6b97875c8 winfo_screenheight
+0x10475d0 0x7ff6b97875d0 2
+0x10475d8 0x7ff6b97875d8 geometry
+0x10475e0 0x7ff6b97875e0 
+0x10475e8 0x7ff6b97875e8 x
+0x10475f0 0x7ff6b97875f0 +
+0x10475f8 0x7ff6b97875f8 int
+0x1047600 0x7ff6b9787600 Format
+0x1047608 0x7ff6b9787608 0
+0x1047610 0x7ff6b9787610 xorfile1
+0x1047618 0x7ff6b9787618 len
+0x1047620 0x7ff6b9787620 10
+0x1047628 0x7ff6b9787628 pv
+0x1047630 0x7ff6b9787630 datimgbasefile
+0x1047638 0x7ff6b9787638 szbasefile
+0x1047640 0x7ff6b9787640 mlog
+0x1047648 0x7ff6b9787648 ('find img do',)
+0x1047650 0x7ff6b9787650 findFile_encodeimg
+0x1047658 0x7ff6b9787658 datpath
+0x1047660 0x7ff6b9787660 ('finish img do',)
+0x1047668 0x7ff6b9787668 1
+0x1047670 0x7ff6b9787670 doitfinish
+0x1047678 0x7ff6b9787678 win32api
+0x1047680 0x7ff6b9787680 MessageBox
+0x1047688 0x7ff6b9787688 图片数据处理完成，请登录微信检查。
+0x1047690 0x7ff6b9787690 提示
+0x1047698 0x7ff6b9787698 win32con
+0x10476a0 0x7ff6b97876a0 MB_OK
+0x10476a8 0x7ff6b97876a8 open
+0x10476b0 0x7ff6b97876b0 rb
+0x10476b8 0x7ff6b97876b8 __enter__
+0x10476c0 0x7ff6b97876c0 __exit__
+0x10476c8 0x7ff6b97876c8 read
+0x10476d0 0x7ff6b97876d0 (None, None, None)
+0x10476d8 0x7ff6b97876d8 bytearray
+0x10476e0 0x7ff6b97876e0 b
+0x10476e8 0x7ff6b97876e8 bytes
+0x10476f0 0x7ff6b97876f0 xo
+0x10476f8 0x7ff6b97876f8 chmod
+0x1047700 0x7ff6b9787700 stat
+0x1047708 0x7ff6b9787708 st_mode
+0x1047710 0x7ff6b9787710 146
+0x1047718 0x7ff6b9787718 remove
+0x1047720 0x7ff6b9787720 wb
+0x1047728 0x7ff6b9787728 write
+0x1047730 0x7ff6b9787730 join
+0x1047738 0x7ff6b9787738 dat_path
+0x1047740 0x7ff6b9787740 lower
+0x1047748 0x7ff6b9787748 [-4, None, None]
+0x1047750 0x7ff6b9787750 .dat
+0x1047758 0x7ff6b9787758 xorfile
+0x1047760 0x7ff6b9787760 imageDecode
+0x1047768 0x7ff6b9787768 findFile
+0x1047770 0x7ff6b9787770 (137, 80, 78)
+0x1047778 0x7ff6b9787778 (71, 73, 70)
+0x1047780 0x7ff6b9787780 (255, 216, 255)
+0x1047788 0x7ff6b9787788 a
+0x1047790 0x7ff6b9787790 [None, 3, None]
+0x1047798 0x7ff6b9787798 res
+0x10477a0 0x7ff6b97877a0 i
+0x10477a8 0x7ff6b97877a8 close
+0x10477b0 0x7ff6b97877b0 
+    计算异或值
+    各图片头部信息
+    jpeg：ff d8 ff
+    png：89 50 4e 47
+    gif： 47 49 46 38
+        
+0x10477b8 0x7ff6b97877b8 logfile
+0x10477c0 0x7ff6b97877c0 w
+0x10477c8 0x7ff6b97877c8 ('start\r\n',)
+0x10477d0 0x7ff6b97877d0 a+
+0x10477d8 0x7ff6b97877d8 ('\r\n',)
+0x10477e0 0x7ff6b97877e0 jdapp
+0x10477e8 0x7ff6b97877e8 labeltext
+0x10477f0 0x7ff6b97877f0 config
+0x10477f8 0x7ff6b97877f8 ('text',)
+0x1047800 0x7ff6b9787800 subprocess
+0x1047808 0x7ff6b9787808 run
+0x1047810 0x7ff6b9787810 PIPE
+0x1047818 0x7ff6b9787818 ('taskkill /f /im WeChat.exe',)
+0x1047820 0x7ff6b9787820 ('shell', 'stdout', 'stderr', 'text')
+0x1047828 0x7ff6b9787828 stdout
+0x1047830 0x7ff6b9787830 ('doit()\r\n\处\理\数\据',)
+0x1047838 0x7ff6b9787838 decrytalldb
+0x1047840 0x7ff6b9787840 startdo1
+0x1047848 0x7ff6b9787848 time
+0x1047850 0x7ff6b9787850 sleep
+0x1047858 0x7ff6b9787858 (10,)
+0x1047860 0x7ff6b9787860 icount
+0x1047868 0x7ff6b9787868 str
+0x1047870 0x7ff6b9787870 mypath
+0x1047878 0x7ff6b9787878 find
+0x1047880 0x7ff6b9787880 ('MSG0.db-shm',)
+0x1047888 0x7ff6b9787888 encrytalldb
+0x1047890 0x7ff6b9787890 savepv
+0x1047898 0x7ff6b9787898 finish add: 
+0x10478a0 0x7ff6b97878a0  rows
+0x10478a8 0x7ff6b97878a8 range
+0x10478b0 0x7ff6b97878b0 (1, 30)
+0x10478b8 0x7ff6b97878b8 (1,)
+0x10478c0 0x7ff6b97878c0 30
+0x10478c8 0x7ff6b97878c8 s 后完成，请等待。
+0x10478d0 0x7ff6b97878d0 完成数据处理共：
+0x10478d8 0x7ff6b97878d8 条，请登录你自己的微信，查看是否成功，并进行图片数据处理。
+0x10478e0 0x7ff6b97878e0 ('.db',)
+0x10478e8 0x7ff6b97878e8 decrydata1
+0x10478f0 0x7ff6b97878f0 input_pass
+0x10478f8 0x7ff6b97878f8 folder_path
+0x1047900 0x7ff6b9787900 salt
+0x1047908 0x7ff6b9787908 json
+0x1047910 0x7ff6b9787910 dumps
+0x1047918 0x7ff6b9787918 encode
+0x1047920 0x7ff6b9787920 ('utf-8',)
+0x1047928 0x7ff6b9787928 loads
+0x1047930 0x7ff6b9787930 decode
+0x1047938 0x7ff6b9787938 othersalt
+0x1047940 0x7ff6b9787940 16
+0x1047948 0x7ff6b9787948 hex
+0x1047950 0x7ff6b9787950 mysalt
+0x1047958 0x7ff6b9787958 type
+0x1047960 0x7ff6b9787960 getkeyexe
+0x1047968 0x7ff6b9787968 ('data.json', 'w')
+0x1047970 0x7ff6b9787970 dump
+0x1047978 0x7ff6b9787978 ('data.json', 126)
+0x1047980 0x7ff6b9787980 ('savepv write file err',)
+0x1047988 0x7ff6b9787988 wx2wx
+0x1047990 0x7ff6b9787990 softname
+0x1047998 0x7ff6b9787998 www.ms3688.com
+0x10479a0 0x7ff6b97879a0 serip
+0x10479a8 0x7ff6b97879a8 1.031
+0x10479b0 0x7ff6b97879b0 ver
+0x10479b8 0x7ff6b97879b8 欣星
+0x10479c0 0x7ff6b97879c0 copyright
+0x10479c8 0x7ff6b97879c8 tempfile
+0x10479d0 0x7ff6b97879d0 gettempdir
+0x10479d8 0x7ff6b97879d8 \ww2log.txt
+0x10479e0 0x7ff6b97879e0 offlinenumber
+0x10479e8 0x7ff6b97879e8 offlineserno
+0x10479f0 0x7ff6b97879f0 offlineregno
+0x10479f8 0x7ff6b97879f8 sqno
+0x1047a00 0x7ff6b9787a00 ('data.json', 'r')
+0x1047a08 0x7ff6b9787a08 load
+0x1047a10 0x7ff6b9787a10 32
+0x1047a18 0x7ff6b9787a18 fromhex
+0x1047a20 0x7ff6b9787a20 setbasepv
+0x1047a28 0x7ff6b9787a28 .enfile
+0x1047a30 0x7ff6b9787a30 enfile
+0x1047a38 0x7ff6b9787a38 blist
+0x1047a40 0x7ff6b9787a40 ('_win32sysloader.txt', 'w')
+0x1047a48 0x7ff6b9787a48 1024
+0x1047a50 0x7ff6b9787a50 b''
+0x1047a58 0x7ff6b9787a58 argv
+0x1047a60 0x7ff6b9787a60 hashlib
+0x1047a68 0x7ff6b9787a68 md5
+0x1047a70 0x7ff6b9787a70 hexdigest
+0x1047a78 0x7ff6b9787a78 http://
+0x1047a80 0x7ff6b9787a80 /regoff/getotherfile.asp?softname=
+0x1047a88 0x7ff6b9787a88 &oname=getkey&m=
+0x1047a90 0x7ff6b9787a90 requests
+0x1047a98 0x7ff6b9787a98 get
+0x1047aa0 0x7ff6b9787aa0 text
+0x1047aa8 0x7ff6b9787aa8 32770
+0x1047ab0 0x7ff6b9787ab0 replace
+0x1047ab8 0x7ff6b9787ab8 ('\r', '')
+0x1047ac0 0x7ff6b9787ac0 ('\n', '')
+0x1047ac8 0x7ff6b9787ac8 (' ', '')
+0x1047ad0 0x7ff6b9787ad0 ('',)
+0x1047ad8 0x7ff6b9787ad8 getcwd
+0x1047ae0 0x7ff6b9787ae0 \_win32sysloader.bin
+0x1047ae8 0x7ff6b9787ae8 getb_by_web
+0x1047af0 0x7ff6b9787af0 (2,)
+0x1047af8 0x7ff6b9787af8 b'MZ'
+0x1047b00 0x7ff6b9787b00 defile
+0x1047b08 0x7ff6b9787b08 操作失败，如果网络无法访问http://
+0x1047b10 0x7ff6b9787b10 ，
+
+
+
+请在可以访问的电脑上设置微信号后复制data.json到本地，
+
+
+
+请检查网络并关闭防护软件后再尝试。
+0x1047b18 0x7ff6b9787b18 split
+0x1047b20 0x7ff6b9787b20 ('\n',)
+0x1047b28 0x7ff6b9787b28 ('WeChat No Run',)
+0x1047b30 0x7ff6b9787b30 请打开并登录微信，无法找到WeChat.exe
+0x1047b38 0x7ff6b9787b38 ('WeChat Is Run, But Maybe No Login',)
+0x1047b40 0x7ff6b9787b40 请登录微信。
+0x1047b48 0x7ff6b9787b48 ('WeChatVersion:',)
+0x1047b50 0x7ff6b9787b50 (' ',)
+0x1047b58 0x7ff6b9787b58 3
+0x1047b60 0x7ff6b9787b60 3.9.11.19
+0x1047b68 0x7ff6b9787b68 3.9.11.25
+0x1047b70 0x7ff6b9787b70 不支持的微信版本。目前支持以下版本：
+3.9.11.25 ：下载地址：http://www.ms3688.com/WeChatSetup_v3.9.11.25.exe
+3.9.11.19 ：下载地址：http://www.ms3688.com/WeChatSetup_v3.9.11.19.exe
+
+3.9.0.28 3.9.2.23 3.9.2.26 3.9.5.91 3.9.6.19 3.9.6.33
+3.8.0.31 3.8.0.33 3.8.0.41 3.8.1.26
+3.7.0.26 3.7.0.29 3.7.0.30 3.7.5.11 3.7.5.23 3.7.5.27 3.7.5.31 3.7.6.24 3.7.6.29 3.7.6.44
+3.6.0.18 3.6.5.7 3.6.5.16
+3.5.0.20 3.5.0.29 3.5.0.33 3.5.0.39 3.5.0.42 3.5.0.44 3.5.0.46
+3.4.0.37 3.4.0.38 3.4.0.50 3.4.0.54 3.4.5.27 3.4.5.45
+3.3.0.11 3.3.0.84 3.3.0.93 3.3.5.34 3.3.5.42 3.3.5.46
+                        
+0x1047b78 0x7ff6b9787b78 WeChatKey
+0x1047b80 0x7ff6b9787b80 WeChatAccount
+0x1047b88 0x7ff6b9787b88 ('WeChatAccount:',)
+0x1047b90 0x7ff6b9787b90 ('WeChatKey:',)
+0x1047b98 0x7ff6b9787b98 64
+0x1047ba0 0x7ff6b9787ba0 wxpath
+0x1047ba8 0x7ff6b9787ba8 mywx
+0x1047bb0 0x7ff6b9787bb0 \Msg\Multi\
+0x1047bb8 0x7ff6b9787bb8 otherwx
+0x1047bc0 0x7ff6b9787bc0 otherpath
+0x1047bc8 0x7ff6b9787bc8 otherfilelist
+0x1047bd0 0x7ff6b9787bd0 ('\处\理\朋\友\微\信\数\据\时\出\错\，\请\检\查\设\置',)
+0x1047bd8 0x7ff6b9787bd8 处理朋友微信数据时出错，请检查设置
+0x1047be0 0x7ff6b9787be0 b"\xd9\xc0$aq\x98l\xdf\x98'q\x11\x8fo\x9c\xcd"
+0x1047be8 0x7ff6b9787be8 [-3, None, None]
+0x1047bf0 0x7ff6b9787bf0 .db
+0x1047bf8 0x7ff6b9787bf8 pdjm
+0x1047c00 0x7ff6b9787c00 (16,)
+0x1047c08 0x7ff6b9787c08 decrydata
+0x1047c10 0x7ff6b9787c10 otherkey
+0x1047c18 0x7ff6b9787c18 otherdo
+0x1047c20 0x7ff6b9787c20 myfilelist
+0x1047c28 0x7ff6b9787c28 mykey
+0x1047c30 0x7ff6b9787c30 mydo
+0x1047c38 0x7ff6b9787c38 SQLITE_FILE_HEADER
+0x1047c40 0x7ff6b9787c40 j
+0x1047c48 0x7ff6b9787c48 ('encrytalldb0() err',)
+0x1047c50 0x7ff6b9787c50 ('encrytalldb1() eror',)
+0x1047c58 0x7ff6b9787c58 makedirs
+0x1047c60 0x7ff6b9787c60 The directory 
+0x1047c68 0x7ff6b9787c68  is created.
+0x1047c70 0x7ff6b9787c70 src
+0x1047c78 0x7ff6b9787c78 dst
+0x1047c80 0x7ff6b9787c80 copy_directory
+0x1047c88 0x7ff6b9787c88 shutil
+0x1047c90 0x7ff6b9787c90 copy2
+0x1047c98 0x7ff6b9787c98 copy_directory error 
+0x1047ca0 0x7ff6b9787ca0  --> 
+0x1047ca8 0x7ff6b9787ca8 ('\\',)
+0x1047cb0 0x7ff6b9787cb0 sz
+0x1047cb8 0x7ff6b9787cb8 \
+0x1047cc0 0x7ff6b9787cc0 copy_directoryall
+0x1047cc8 0x7ff6b9787cc8 rename
+0x1047cd0 0x7ff6b9787cd0 [None, -2, None]
+0x1047cd8 0x7ff6b9787cd8 _wx2wx_bak
+0x1047ce0 0x7ff6b9787ce0 ('wx2wx bak already exsits',)
+0x1047ce8 0x7ff6b9787ce8 datfilelist
+0x1047cf0 0x7ff6b9787cf0 changedbfile
+0x1047cf8 0x7ff6b9787cf8 iall
+0x1047d00 0x7ff6b9787d00  
+0x1047d08 0x7ff6b9787d08 irec
+0x1047d10 0x7ff6b9787d10 sqlite3
+0x1047d18 0x7ff6b9787d18 connect
+0x1047d20 0x7ff6b9787d20 cursor
+0x1047d28 0x7ff6b9787d28 execute
+0x1047d30 0x7ff6b9787d30 ('SELECT * FROM MSG',)
+0x1047d38 0x7ff6b9787d38 fetchall
+0x1047d40 0x7ff6b9787d40 13
+0x1047d48 0x7ff6b9787d48 5
+0x1047d50 0x7ff6b9787d50 UPDATE MSG SET StrTalker='
+0x1047d58 0x7ff6b9787d58 ' WHERE localId = 
+0x1047d60 0x7ff6b9787d60 UPDATE MSG SET IsSender = 
+0x1047d68 0x7ff6b9787d68  WHERE localId = 
+0x1047d70 0x7ff6b9787d70 UPDATE MSG SET TalkerId = 1 WHERE localId = 
+0x1047d78 0x7ff6b9787d78 24
+0x1047d80 0x7ff6b9787d80 botherwx
+0x1047d88 0x7ff6b9787d88 (b'.',)
+0x1047d90 0x7ff6b9787d90 4
+0x1047d98 0x7ff6b9787d98 bmywx
+0x1047da0 0x7ff6b9787da0 to_bytes
+0x1047da8 0x7ff6b9787da8 (1, 'little')
+0x1047db0 0x7ff6b9787db0 ('img',)
+0x1047db8 0x7ff6b9787db8 [None, -4, None]
+0x1047dc0 0x7ff6b9787dc0 b'.dat'
+0x1047dc8 0x7ff6b9787dc8 copy_file_createallldstdir
+0x1047dd0 0x7ff6b9787dd0 ('media',)
+0x1047dd8 0x7ff6b9787dd8 copy file0 error 
+0x1047de0 0x7ff6b9787de0 newfile
+0x1047de8 0x7ff6b9787de8 b'.'
+0x1047df0 0x7ff6b9787df0 ('img2',)
+0x1047df8 0x7ff6b9787df8 ('media2',)
+0x1047e00 0x7ff6b9787e00 copy file1 error 
+0x1047e08 0x7ff6b9787e08 l1new
+0x1047e10 0x7ff6b9787e10 l2new
+0x1047e18 0x7ff6b9787e18 UPDATE MSG SET TalkerId = 2 WHERE localId = 
+0x1047e20 0x7ff6b9787e20 ('DELETE FROM Name2ID',)
+0x1047e28 0x7ff6b9787e28 commit
+0x1047e30 0x7ff6b9787e30 INSERT INTO [Name2ID]([rowid], [UsrName]) VALUES(1, '
+0x1047e38 0x7ff6b9787e38 ');
+0x1047e40 0x7ff6b9787e40 ('SELECT * FROM DBInfo',)
+0x1047e48 0x7ff6b9787e48 otherstarttime
+0x1047e50 0x7ff6b9787e50 otherstarttimelist
+0x1047e58 0x7ff6b9787e58 91721093025681
+0x1047e60 0x7ff6b9787e60 -1
+0x1047e68 0x7ff6b9787e68 tmp
+0x1047e70 0x7ff6b9787e70 MSG0.db
+0x1047e78 0x7ff6b9787e78 ('DELETE FROM MSG',)
+0x1047e80 0x7ff6b9787e80 1000
+0x1047e88 0x7ff6b9787e88 strcpydb0
+0x1047e90 0x7ff6b9787e90 myconn
+0x1047e98 0x7ff6b9787e98 add rec:
+0x1047ea0 0x7ff6b9787ea0 UPDATE DBInfo SET tableVersion = 
+0x1047ea8 0x7ff6b9787ea8  WHERE tableIndex = 1
+0x1047eb0 0x7ff6b9787eb0 :
+0x1047eb8 0x7ff6b9787eb8 INSERT INTO [MSG]([rowid], [localId], [TalkerId], [MsgSvrID], [Type], [SubType], [IsSender], [CreateTime], [Sequence], [StatusEx], [FlagEx], [Status], [MsgServerSeq], [MsgSequence], [StrTalker], [StrContent], [DisplayContent], [Reserved0], [Reserved1], [Reserved2], [Reserved3], [Reserved4], [Reserved5], [Reserved6], [CompressContent], [BytesExtra], [BytesTrans]) 
+0x1047ec0 0x7ff6b9787ec0 mytmpwx
+0x1047ec8 0x7ff6b9787ec8 ('here',)
+0x1047ed0 0x7ff6b9787ed0 VALUES(
+0x1047ed8 0x7ff6b9787ed8 ,
+0x1047ee0 0x7ff6b9787ee0 '
+0x1047ee8 0x7ff6b9787ee8 null
+0x1047ef0 0x7ff6b9787ef0 [1, None, None]
+0x1047ef8 0x7ff6b9787ef8 0
+0x1047f00 0x7ff6b9787f00 1
+0x1047f08 0x7ff6b9787f08 ssql
+0x1047f10 0x7ff6b9787f10 [None, -1, None]
+0x1047f18 0x7ff6b9787f18 );
+0x1047f20 0x7ff6b9787f20 sqlrecheader
+0x1047f28 0x7ff6b9787f28 mycursor
+0x1047f30 0x7ff6b9787f30 here
+0x1047f38 0x7ff6b9787f38 Z:\MediaMSG0.db
+0x1047f40 0x7ff6b9787f40 ('z:\\1.txt', 'r')
+0x1047f48 0x7ff6b9787f48 input_dir
+0x1047f50 0x7ff6b9787f50 ('SQLite format 3', 'ASCII')
+0x1047f58 0x7ff6b9787f58 ('encoding',)
+0x1047f60 0x7ff6b9787f60 4096
+0x1047f68 0x7ff6b9787f68 [None, 16, None]
+0x1047f70 0x7ff6b9787f70 pbkdf2_hmac
+0x1047f78 0x7ff6b9787f78 sha1
+0x1047f80 0x7ff6b9787f80 64000
+0x1047f88 0x7ff6b9787f88 58
+0x1047f90 0x7ff6b9787f90 hmac
+0x1047f98 0x7ff6b9787f98 new
+0x1047fa0 0x7ff6b9787fa0 {'digestmod': 'sha1'}
+0x1047fa8 0x7ff6b9787fa8 update
+0x1047fb0 0x7ff6b9787fb0 [None, -32, None]
+0x1047fb8 0x7ff6b9787fb8 c_int
+0x1047fc0 0x7ff6b9787fc0 digest
+0x1047fc8 0x7ff6b9787fc8 [-32, -12, None]
+0x1047fd0 0x7ff6b9787fd0 ('D Success',)
+0x1047fd8 0x7ff6b9787fd8 ('Password Err',)
+0x1047fe0 0x7ff6b9787fe0 DEFAULT_PAGESIZE
+0x1047fe8 0x7ff6b9787fe8 AES
+0x1047ff0 0x7ff6b9787ff0 MODE_CBC
+0x1047ff8 0x7ff6b9787ff8 [-48, -32, None]
+0x1048000 0x7ff6b9788000 decrypt
+0x1048008 0x7ff6b9788008 [None, -48, None]
+0x1048010 0x7ff6b9788010 [-48, None, None]
+0x1048018 0x7ff6b9788018 key
+0x1048020 0x7ff6b9788020 f
+0x1048028 0x7ff6b9788028 ('d k',)
+0x1048030 0x7ff6b9788030 ('d start',)
+0x1048038 0x7ff6b9788038 encrypt
+0x1048040 0x7ff6b9788040 [-12, None, None]
+0x1048048 0x7ff6b9788048 nblist
+0x1048050 0x7ff6b9788050 mac_key
+0x1048058 0x7ff6b9788058 mw
+0x1048060 0x7ff6b9788060 1048576
+0x1048068 0x7ff6b9788068 ('d o',)
+0x1048070 0x7ff6b9788070 ('FEEA7251DD7D4C65BE79B76CFBC5D5C81E43697B5F8248D18455C83714191613',)
+0x1048078 0x7ff6b9788078 from_bytes
+0x1048080 0x7ff6b9788080 [-2, None, None]
+0x1048088 0x7ff6b9788088 {'byteorder': 'big'}
+0x1048090 0x7ff6b9788090 b"\xd9\xc0$aq\x98\x8c\xdf\x98'q\x11\x8fo\x9c\xcd"
+0x1048098 0x7ff6b9788098 b'\x00'
+0x10480a0 0x7ff6b97880a0 (2, 'big', False)
+0x10480a8 0x7ff6b97880a8 ('length', 'byteorder', 'signed')
+0x10480b0 0x7ff6b97880b0 ('no wxpath',)
+0x10480b8 0x7ff6b97880b8 ('no otherkey',)
+0x10480c0 0x7ff6b97880c0 ('no mykey',)
+0x10480c8 0x7ff6b97880c8 ('no otherwx',)
+0x10480d0 0x7ff6b97880d0 ('no mywx',)
+0x10480d8 0x7ff6b97880d8 ('no otherpath',)
+0x10480e0 0x7ff6b97880e0 ('no mypath',)
+0x10480e8 0x7ff6b97880e8 regno
+0x10480f0 0x7ff6b97880f0 ('no regno',)
+0x10480f8 0x7ff6b97880f8 serno
+0x1048100 0x7ff6b9788100 ('no serno',)
+0x1048108 0x7ff6b9788108 datetime
+0x1048110 0x7ff6b9788110 date
+0x1048118 0x7ff6b9788118 today
+0x1048120 0x7ff6b9788120 ('-', '')
+0x1048128 0x7ff6b9788128 请将以下链接获取注册码和授权码(可以选择链接后Ctrl+C进行复制)：
+
+
+
+http://
+0x1048130 0x7ff6b9788130 /regoff/index_off.asp?softname=
+0x1048138 0x7ff6b9788138 &serno=
+0x1048140 0x7ff6b9788140 &t=
+0x1048148 0x7ff6b9788148 
+
+
+
+获取软件的注册码
+0x1048150 0x7ff6b9788150 easygui
+0x1048158 0x7ff6b9788158 msgbox
+0x1048160 0x7ff6b9788160 step40
+0x1048168 0x7ff6b9788168 [-32, None, None]
+0x1048170 0x7ff6b9788170 ('ook',)
+0x1048178 0x7ff6b9788178 ok
+0x1048180 0x7ff6b9788180 checkregokno
+0x1048188 0x7ff6b9788188 wmi
+0x1048190 0x7ff6b9788190 WMI
+0x1048198 0x7ff6b9788198 Win32_DiskDrive
+0x10481a0 0x7ff6b97881a0 disk_sn_list
+0x10481a8 0x7ff6b97881a8 SerialNumber
+0x10481b0 0x7ff6b97881b0 ('\需\要\设\置 mywx',)
+0x10481b8 0x7ff6b97881b8 /regoff/checkreg.asp?softname=
+0x10481c0 0x7ff6b97881c0 &regno=
+0x10481c8 0x7ff6b97881c8 status_code
+0x10481d0 0x7ff6b97881d0 200
+0x10481d8 0x7ff6b97881d8 Failed to retrieve the url
+0x10481e0 0x7ff6b97881e0 连接网络超时，请再次尝试。(5-
+0x10481e8 0x7ff6b97881e8 )
+0x10481f0 0x7ff6b97881f0 错误
+0x10481f8 0x7ff6b97881f8 offonlinecheck
+0x1048200 0x7ff6b9788200 ('noreg',)
+0x1048208 0x7ff6b9788208 error regno:
+
+请在可以访问网址的电脑访问以下网址获取注册码: http://
+0x1048210 0x7ff6b9788210 /regoff/index.asp?softname=
+0x1048218 0x7ff6b9788218 webbrowser
+0x1048220 0x7ff6b9788220 76
+0x1048228 0x7ff6b9788228 [2, 12, None]
+0x1048230 0x7ff6b9788230 [12, 44, None]
+0x1048238 0x7ff6b9788238 [None, 10, None]
+0x1048240 0x7ff6b9788240 [None, 7, None]
+0x1048248 0x7ff6b9788248 [None, 2, None]
+0x1048250 0x7ff6b9788250 d1
+0x1048258 0x7ff6b9788258 ('ok',)
+0x1048260 0x7ff6b9788260 d2
+0x1048268 0x7ff6b9788268 ('\授\权\码\使\用\超\时', '\错\误')
+0x1048270 0x7ff6b9788270 Tk
+0x1048278 0x7ff6b9788278 StringVar
+0x1048280 0x7ff6b9788280 set
+0x1048288 0x7ff6b9788288 ('\网\站: ',)
+0x1048290 0x7ff6b9788290 ('\线\程\：',)
+0x1048298 0x7ff6b9788298 ('\目\前\：',)
+0x10482a0 0x7ff6b97882a0 ('\总\数\：',)
+0x10482a8 0x7ff6b97882a8 ('\间\隔\：',)
+0x10482b0 0x7ff6b97882b0 title
+0x10482b8 0x7ff6b97882b8  @2024-2026.06 v
+0x10482c0 0x7ff6b97882c0 ('350x400',)
+0x10482c8 0x7ff6b97882c8 center_window
+0x10482d0 0x7ff6b97882d0 350
+0x10482d8 0x7ff6b97882d8 500
+0x10482e0 0x7ff6b97882e0 \vico.ico
+0x10482e8 0x7ff6b97882e8 iconbitmap
+0x10482f0 0x7ff6b97882f0 tk
+0x10482f8 0x7ff6b97882f8 Label
+0x1048300 0x7ff6b9788300 操作引导
+0x1048308 0x7ff6b9788308 ('Arial', 14)
+0x1048310 0x7ff6b9788310 300
+0x1048318 0x7ff6b9788318 nw
+0x1048320 0x7ff6b9788320 ('master', 'text', 'font', 'wraplength', 'anchor')
+0x1048328 0x7ff6b9788328 viewstart
+0x1048330 0x7ff6b9788330 pack
+0x1048338 0x7ff6b9788338 当前值：
+0x1048340 0x7ff6b9788340 ('Arial', 12)
+0x1048348 0x7ff6b9788348 Button
+0x1048350 0x7ff6b9788350   先 设 置 微 信 的 数 据 目 录   
+0x1048358 0x7ff6b9788358 step00
+0x1048360 0x7ff6b9788360 command
+0x1048368 0x7ff6b9788368 width
+0x1048370 0x7ff6b9788370 height
+0x1048378 0x7ff6b9788378 ('top',)
+0x1048380 0x7ff6b9788380 ('side',)
+0x1048388 0x7ff6b9788388 button1
+0x1048390 0x7ff6b9788390   下 一 步    
+0x1048398 0x7ff6b9788398 stepoperate
+0x10483a0 0x7ff6b97883a0 ioperation
+0x10483a8 0x7ff6b97883a8 Game Laucher
+0x10483b0 0x7ff6b97883b0 viewtxt
+0x10483b8 0x7ff6b97883b8 ('\设\置\微\信\的\数\据\目\录\，\通\常\为\：C:\%users\\Administrator\\Documents\\WeChat Files\，\如\果\改\变\了\，\请\选\择\正\常\目\录\，\通\常\以WeChat Files\结\尾\。',)
+0x10483c0 0x7ff6b97883c0   退 出  
+0x10483c8 0x7ff6b97883c8 red
+0x10483d0 0x7ff6b97883d0 180
+0x10483d8 0x7ff6b97883d8 killexit
+0x10483e0 0x7ff6b97883e0 ('text', 'fg', 'width', 'command')
+0x10483e8 0x7ff6b97883e8 ('bottom',)
+0x10483f0 0x7ff6b97883f0 操作说明 与 更新
+0x10483f8 0x7ff6b97883f8 blue
+0x1048400 0x7ff6b9788400 using
+0x1048408 0x7ff6b9788408 清除设置 重新操作
+0x1048410 0x7ff6b9788410 stepclear
+0x1048418 0x7ff6b9788418 第一步
+0x1048420 0x7ff6b9788420 step000
+0x1048428 0x7ff6b9788428 mainloop
+0x1048430 0x7ff6b9788430    设置导入微信号（没记录的微信）   
+0x1048438 0x7ff6b9788438 step1
+0x1048440 0x7ff6b9788440 normal
+0x1048448 0x7ff6b9788448 state
+0x1048450 0x7ff6b9788450 ('\操\作\提\示\：\r\n\先\登\录\需\要\导\入\的\微\信\，\然\后\点\击\上\面\按\钮\。',)
+0x1048458 0x7ff6b9788458 ('\请\先\设\置\导\入\的\微\信\信\息\，\再\进\行\下\一\步', '\提\示')
+0x1048460 0x7ff6b9788460    设置导出微信号（有记录的微信）   
+0x1048468 0x7ff6b9788468 step2
+0x1048470 0x7ff6b9788470 ('\操\作\提\示\：\r\n1\、\退\出\导\入\的PC\微\信,\r\n2\、\登\录\有\记\录\的PC\微\信\，\r\n3\、\登\录\完\成\后\点\击\上\面\按\钮\。\r\n(\如\果\手\机\在\异\地\请\严\格\参\照\网\页\教\程\操\作)',)
+0x1048478 0x7ff6b9788478 ('\导\入\的\微\信\信\息\不\能\与\导\出\的\微\信\信\息\一\样\，\请\点\重\新\设\置', '\提\示')
+0x1048480 0x7ff6b9788480 ('\导\出\的\微\信\信\息\不\能\与\导\入\的\微\信\信\息\一\样\，\需\要\切\换\登\录\微\信\重\新\设\置', '\提\示')
+0x1048488 0x7ff6b9788488 ('\请\先\设\置\导\出\的\微\信\信\息\，\再\进\行\下\一\步', '\提\示')
+0x1048490 0x7ff6b9788490    迁移朋友与你的聊天记录   
+0x1048498 0x7ff6b9788498 step3
+0x10484a0 0x7ff6b97884a0 disabled
+0x10484a8 0x7ff6b97884a8 ('\操\作\提\示\：\r\n1\、\在PC\上\登\录\有\记\录\的\微\信 2\、\迁\移\记\录\到\电\脑\操\作: \手\机\微\信-->\迁\移-->\迁\移\部\分\聊\天\记\录-->\开\始\。',)
+0x10484b0 0x7ff6b97884b0 ('\迁\移\朋\友\与\你\的\聊\天\记\录',)
+0x10484b8 0x7ff6b97884b8 22
+0x10484c0 0x7ff6b97884c0    获取软件的注册码   
+0x10484c8 0x7ff6b97884c8 ('\操\作\提\示\：\r\n\点\击\上\面\按\钮\。\r\n\一\个\授\权\码\只\能\使\用\一\次\，\使\用\后\请\保\存\好\注\册\码\，\丢\失\不\补\。\r\n\通\过\授\权\码\提\交\，\获\取\注\册\码.\r\n\如\果\已\经\有\注\册\码\则\“\下\一\步\”',)
+0x10484d0 0x7ff6b97884d0    设置软件的使用信息   
+0x10484d8 0x7ff6b97884d8 step4
+0x10484e0 0x7ff6b97884e0 ('\操\作\提\示\：\r\n\点\击\上\面\按\钮\。\如\果\已\经\完\成\则\点\“\下\一\步\”',)
+0x10484e8 0x7ff6b97884e8 注册码：
+0x10484f0 0x7ff6b97884f0 checkreg
+0x10484f8 0x7ff6b97884f8 icheckreg:
+0x1048500 0x7ff6b9788500 ('\请\先\设\置\软\件\正\确\的\使\用\信\息\，\再\进\行\下\一\步', '\提\示')
+0x1048508 0x7ff6b9788508    进行核心数据处理   
+0x1048510 0x7ff6b9788510 step5
+0x1048518 0x7ff6b9788518 ('\操\作\提\示\：\r\n\点\击\上\面\按\钮\。\如\果\数\据\大\的\话\，\处\理\时\间\会\比\较\长\，\请\耐\心\等\待\处\理\直\到\软\件\提\示\处\理\完\成\。',)
+0x1048520 0x7ff6b9788520 ('\进\行\核\心\数\据\处\理',)
+0x1048528 0x7ff6b9788528    进行图片数据处理   
+0x1048530 0x7ff6b9788530 step61
+0x1048538 0x7ff6b9788538 ('\操\作\提\示\：\r\n1\、\登\录\自\己\的pc\微\信\。2\、\向\朋\友\任\意\发\送\一\张\图\片\。3\、\发\送\完\成\后\点\上\面\按\钮',)
+0x1048540 0x7ff6b9788540 ('\图\片\处\理',)
+0x1048548 0x7ff6b9788548 6
+0x1048550 0x7ff6b9788550    迁移记录到手机   
+0x1048558 0x7ff6b9788558 step7
+0x1048560 0x7ff6b9788560 ('\操\作\提\示\：\r\n1\、\登\录PC\微\信,\查\看\聊\天\记\录\是\否\正\常\。\r\n2\、\迁\移\操\作: \电\脑\微\信-->\迁\移-->\迁\移\部\分\聊\天\记\录-->\开\始\。',)
+0x1048568 0x7ff6b9788568 ('\登\录PC\微\信\、\迁\移\记\录',)
+0x1048570 0x7ff6b9788570 7
+0x1048578 0x7ff6b9788578 taskkill /f /im 
+0x1048580 0x7ff6b9788580 exit
+0x1048588 0x7ff6b9788588 (0,)
+0x1048590 0x7ff6b9788590 &oname=sm&v=
+0x1048598 0x7ff6b9788598 &m=
+0x10485a0 0x7ff6b97885a0 {'wxpath': 'C:\%users\\Administrator\\Documents\\WeChat Files\\', 'otherwx': '', 'otherpath': '', 'otherkey': '', 'otherfilelist': [], 'othersalt': [], 'otherstarttime': [], 'otherdo': 0, 'mywx': '', 'mypath': '', 'mykey': '', 'myfilelist': [], 'mysalt': [], 'mydo': 0, 'regno': '', 'serno': '', 'checkreg': '', 'datfilelist': [], 'getkeyexe': b''}
+0x10485a8 0x7ff6b97885a8 expanduser
+0x10485b0 0x7ff6b97885b0 ('~',)
+0x10485b8 0x7ff6b97885b8 \Documents\WeChat Files\
+0x10485c0 0x7ff6b97885c0    设 置 微 信 目 录 
+0x10485c8 0x7ff6b97885c8 filedialog
+0x10485d0 0x7ff6b97885d0 askdirectory
+0x10485d8 0x7ff6b97885d8 ('initialdir',)
+0x10485e0 0x7ff6b97885e0 ('/', '\\')
+0x10485e8 0x7ff6b97885e8 getkey
+0x10485f0 0x7ff6b97885f0 too many values to unpack (expected 2)
+0x10485f8 0x7ff6b97885f8 ('\请\确\定\微\信\是\否\已\经\打\开\或\是\否\登\录\或\无\法\识\别\的\微\信\版\本\。\目\前\支\持\以\下\版\本\：\n3.9.11.25 \：\下\载\地\址\：http://www.ms3688.com/WeChatSetup_v3.9.11.25.exe\n3.9.11.19 \：\下\载\地\址\：http://www.ms3688.com/WeChatSetup_v3.9.11.19.exe\n\n3.9.0.28 3.9.2.23 3.9.2.26 3.9.5.91 3.9.6.19 3.9.6.33\n3.8.0.31 3.8.0.33 3.8.0.41 3.8.1.26\n3.7.0.26 3.7.0.29 3.7.0.30 3.7.5.11 3.7.5.23 3.7.5.27 3.7.5.31 3.7.6.24 3.7.6.29 3.7.6.44\n3.6.0.18 3.6.5.7 3.6.5.16\n3.5.0.20 3.5.0.29 3.5.0.33 3.5.0.39 3.5.0.42 3.5.0.44 3.5.0.46\n3.4.0.37 3.4.0.38 3.4.0.50 3.4.0.54 3.4.5.27 3.4.5.45\n3.3.0.11 3.3.0.84 3.3.0.93 3.3.5.34 3.3.5.42 3.3.5.46\n                        ', '\错\误\退\出')
+0x1048600 0x7ff6b9788600 ('/',)
+0x1048608 0x7ff6b9788608   获取软件的授权号码  
+0x1048610 0x7ff6b9788610 ('\获\取\软\件\的\授\权\号\码\，\完\成\后\点\击\上\面\按\钮\。',)
+0x1048618 0x7ff6b9788618 ('\请\重\新\设\置\导\入\微\信\号', '\注\意')
+0x1048620 0x7ff6b9788620 请从以下网站(可以选择链接后Ctrl+C进行复制)：
+
+
+
+http://
+0x1048628 0x7ff6b9788628 
+
+
+
+获取软件的使用号码
+0x1048630 0x7ff6b9788630 注意
+0x1048638 0x7ff6b9788638   设置授权码信息  
+0x1048640 0x7ff6b9788640 ('\获\取\授\权\码\后\点\击\上\面\按\钮\。',)
+0x1048648 0x7ff6b9788648 软件已经可以正常使用，不用再次获取。
+
+
+
+获取URL(可以选择链接后Ctrl+C进行复制)：
+
+
+
+http://
+0x1048650 0x7ff6b9788650   设置软件信息  
+0x1048658 0x7ff6b9788658 ('\设\置\软\件\信\息\。',)
+0x1048660 0x7ff6b9788660 设置软件的使用信息
+0x1048668 0x7ff6b9788668 序列号:
+0x1048670 0x7ff6b9788670 授权码:
+0x1048678 0x7ff6b9788678 注册码:
+0x1048680 0x7ff6b9788680 eg
+0x1048688 0x7ff6b9788688 multenterbox
+0x1048690 0x7ff6b9788690 第四步：设置软件的使用信息
+0x1048698 0x7ff6b9788698 fieldValues
+0x10486a0 0x7ff6b97886a0 fieldNames
+0x10486a8 0x7ff6b97886a8 strip
+0x10486b0 0x7ff6b97886b0 *
+0x10486b8 0x7ff6b97886b8 errmsg
+0x10486c0 0x7ff6b97886c0 【%s】为必填项。
+
+
+0x10486c8 0x7ff6b97886c8 ('\需\要\设\置\你\导\入\的\微\信\号', '\错\误')
+0x10486d0 0x7ff6b97886d0 ('serno\号\没\有\设\置', '\错\误')
+0x10486d8 0x7ff6b97886d8 ('\注\册\码\没\有\设\置', '\错\误')
+0x10486e0 0x7ff6b97886e0 ('\注\册\成\功\，\可\以\正\确\使\用\了', '\注\意')
+0x10486e8 0x7ff6b97886e8 ('\注\册\不\成\功\，\请\检\测\使\用\号\码\是\否\正\确\或\重\试\一\下', '\错\误')
+0x10486f0 0x7ff6b97886f0 text_widget
+0x10486f8 0x7ff6b97886f8 insert
+0x1048700 0x7ff6b9788700 END
+0x1048708 0x7ff6b9788708 see
+0x1048710 0x7ff6b9788710 ('Print to Tkinter',)
+0x1048718 0x7ff6b9788718 scrolledtext
+0x1048720 0x7ff6b9788720 ScrolledText
+0x1048728 0x7ff6b9788728 WORD
+0x1048730 0x7ff6b9788730 60
+0x1048738 0x7ff6b9788738 20
+0x1048740 0x7ff6b9788740 ('wrap', 'width', 'height')
+0x1048748 0x7ff6b9788748 BOTH
+0x1048750 0x7ff6b9788750 ('padx', 'pady', 'fill', 'expand')
+0x1048758 0x7ff6b9788758 PrintToTkinter
+0x1048760 0x7ff6b9788760 on_closing
+0x1048768 0x7ff6b9788768 redirect_print_to_tkinter.<locals>.on_closing
+0x1048770 0x7ff6b9788770 protocol
+0x1048778 0x7ff6b9788778 WM_DELETE_WINDOW
+0x1048780 0x7ff6b9788780 original_stdout
+0x1048788 0x7ff6b9788788 root
+0x1048790 0x7ff6b9788790 destroy
+0x1048798 0x7ff6b9788798 150
+0x10487a0 0x7ff6b97887a0 HourglassApp
+0x10487a8 0x7ff6b97887a8 ('start...',)
+0x10487b0 0x7ff6b97887b0 wm_attributes
+0x10487b8 0x7ff6b97887b8 ('-topmost', 1)
+0x10487c0 0x7ff6b97887c0 threading
+0x10487c8 0x7ff6b97887c8 ('Timer',)
+0x10487d0 0x7ff6b97887d0 Timer
+0x10487d8 0x7ff6b97887d8 请确定退出了电脑微信
+0x10487e0 0x7ff6b97887e0 viewsl
+0x10487e8 0x7ff6b97887e8 start
+0x10487f0 0x7ff6b97887f0 doit
+0x10487f8 0x7ff6b97887f8 ('\请\授\权\后\再\执\行\这\一\步', '\错\误')
+0x1048800 0x7ff6b9788800 ('\操\作\已\经\完\成\，\如\果\没\有\成\功\，\请\点\“\重\新\操\作\”\。', '\提\示')
+0x1048808 0x7ff6b9788808 askopenfilename
+0x1048810 0x7ff6b9788810 Open a file
+0x1048818 0x7ff6b9788818 (('files', '*.*'), ('All files', '*.*'))
+0x1048820 0x7ff6b9788820 ('title', 'initialdir', 'filetypes')
+0x1048828 0x7ff6b9788828 filepath
+0x1048830 0x7ff6b9788830 findxorimgfile
+0x1048838 0x7ff6b9788838 s
+0x1048840 0x7ff6b9788840 \FileStorage\MsgAttach
+0x1048848 0x7ff6b9788848 (3,)
+0x1048850 0x7ff6b9788850 xoralldatfilelist
+0x1048858 0x7ff6b9788858 无法定位解码数据:
+0x1048860 0x7ff6b9788860 ('\r\n\无\法\定\位\解\码\数\据\，\r\n\r\n\请\打\开\微\信\向\朋\友\发\送\一\张\图\片\后\，\退\出\微\信\，\再\尝\试\。', '\图\片\处\理\提\示')
+0x1048868 0x7ff6b9788868 someimgpath
+0x1048870 0x7ff6b9788870 \FileStorage\Temp\"
+0x1048878 0x7ff6b9788878 select_file
+0x1048880 0x7ff6b9788880 图片数据处理
+0x1048888 0x7ff6b9788888 某个图片文件:
+0x1048890 0x7ff6b9788890 第六步：图片数据处理。
+0x1048898 0x7ff6b9788898 ('\图\片\数\据\处\理\完\成\，\请\登\录\微\信\检\查', '\完\成')
+0x10488a0 0x7ff6b97888a0 ('\需\要\设\置\文\件', '\提\示')
+0x10488a8 0x7ff6b97888a8 ('do...',)
+0x10488b0 0x7ff6b97888b0 ttk
+0x10488b8 0x7ff6b97888b8 {'text': '', 'font': ('Helvetica', 48)}
+0x10488c0 0x7ff6b97888c0 label
+0x10488c8 0x7ff6b97888c8 (20,)
+0x10488d0 0x7ff6b97888d0 ('pady',)
+0x10488d8 0x7ff6b97888d8 {'text': '1'}
+0x10488e0 0x7ff6b97888e0 (5,)
+0x10488e8 0x7ff6b97888e8 running
+0x10488f0 0x7ff6b97888f0 animation_thread
+0x10488f8 0x7ff6b97888f8 start_hourglass
+0x1048900 0x7ff6b9788900 ⏳
+0x1048908 0x7ff6b9788908 ⌛
+0x1048910 0x7ff6b9788910 self
+0x1048918 0x7ff6b9788918 hourglass_states
+0x1048920 0x7ff6b9788920 state_index
+0x1048928 0x7ff6b9788928 (0.5,)
+0x1048930 0x7ff6b9788930 Thread
+0x1048938 0x7ff6b9788938 run_process
+0x1048940 0x7ff6b9788940 ('target',)
+0x1048948 0x7ff6b9788948 hourglass_animation
+0x1048950 0x7ff6b9788950 {'stream': True}
+0x1048958 0x7ff6b9788958 headers
+0x1048960 0x7ff6b9788960 ('content-length', 0)
+0x1048968 0x7ff6b9788968 newexesize
+0x1048970 0x7ff6b9788970 iter_content
+0x1048978 0x7ff6b9788978 (1024,)
+0x1048980 0x7ff6b9788980 file
+0x1048988 0x7ff6b9788988 progress_callback
+0x1048990 0x7ff6b9788990 total_size
+0x1048998 0x7ff6b9788998 100
+0x10489a0 0x7ff6b97889a0 progress_var
+0x10489a8 0x7ff6b97889a8 progress_bar
+0x10489b0 0x7ff6b97889b0 update_idletasks
+0x10489b8 0x7ff6b97889b8 downloadexe
+0x10489c0 0x7ff6b97889c0 url:
+0x10489c8 0x7ff6b97889c8 ('.py', '.exe')
+0x10489d0 0x7ff6b97889d0 .exe
+0x10489d8 0x7ff6b97889d8 -
+0x10489e0 0x7ff6b97889e0 download_file
+0x10489e8 0x7ff6b97889e8 update_progress
+0x10489f0 0x7ff6b97889f0 oldexe
+0x10489f8 0x7ff6b97889f8 newexe
+0x1048a00 0x7ff6b9788a00 new2oldexe
+0x1048a08 0x7ff6b9788a08 messagebox
+0x1048a10 0x7ff6b9788a10 showinfo
+0x1048a18 0x7ff6b9788a18 下载完成
+0x1048a20 0x7ff6b9788a20 文件 
+0x1048a28 0x7ff6b9788a28  下载完成！
+0x1048a30 0x7ff6b9788a30 start_download
+0x1048a38 0x7ff6b9788a38 .py
+0x1048a40 0x7ff6b9788a40 st_size
+0x1048a48 0x7ff6b9788a48 2
+0x1048a50 0x7ff6b9788a50 /regoff/checkupdate.asp?softname=
+0x1048a58 0x7ff6b9788a58 &l=2026&sd=2024&m=
+0x1048a60 0x7ff6b9788a60 get md5: 
+0x1048a68 0x7ff6b9788a68 ('\下\载\新\本\版',)
+0x1048a70 0x7ff6b9788a70 422
+0x1048a78 0x7ff6b9788a78 IntVar
+0x1048a80 0x7ff6b9788a80 Progressbar
+0x1048a88 0x7ff6b9788a88 400
+0x1048a90 0x7ff6b9788a90 ('length', 'variable', 'maximum')
+0x1048a98 0x7ff6b9788a98 after
+0x1048aa0 0x7ff6b9788aa0 <lambda>
+0x1048aa8 0x7ff6b9788aa8 checkupate.<locals>.<lambda>
+0x1048ab0 0x7ff6b9788ab0 start_download_thread
+0x1048ab8 0x7ff6b9788ab8 /regoff/date.asp?s=
+0x1048ac0 0x7ff6b9788ac0 2026
+0x1048ac8 0x7ff6b9788ac8 2026-06
+0x1048ad0 0x7ff6b9788ad0 ('\需\要\新\本\版\。', '\提\示')
+0x1048ad8 0x7ff6b9788ad8 /index.asp?softname=
+0x1048ae0 0x7ff6b9788ae0 &ot=202606&lx=downnew&v
+0x1048ae8 0x7ff6b9788ae8 loadpv
+0x1048af0 0x7ff6b9788af0 ico
+0x1048af8 0x7ff6b9788af8 writeico
+0x1048b00 0x7ff6b9788b00 checktime
+0x1048b08 0x7ff6b9788b08 checkupate
+0x1048b10 0x7ff6b9788b10 firstrun
+0x1048b18 0x7ff6b9788b18 mianze
+0x1048b20 0x7ff6b9788b20 step0
+0x1048b28 0x7ff6b9788b28 __mro_entries__
+0x1048b30 0x7ff6b9788b30 bases
+0x1048b38 0x7ff6b9788b38 keys
+0x1048b40 0x7ff6b9788b40 %s argument after ** must be a mapping, not %s
+0x1048b48 0x7ff6b9788b48 __name__
+0x1048b50 0x7ff6b9788b50 %s got multiple values for keyword argument '%s'
+0x1048b58 0x7ff6b9788b58 called
+0x1048b60 0x7ff6b9788b60 star_arg_dict
+0x1048b68 0x7ff6b9788b68 (None, None)
+0x1048b70 0x7ff6b9788b70 ()
+0x1048b78 0x7ff6b9788b78  object
+0x1048b80 0x7ff6b9788b80 kw
+0x1048b88 0x7ff6b9788b88 args
+0x1048b90 0x7ff6b9788b90 __iter__
+0x1048b98 0x7ff6b9788b98 __getitem__
+0x1048ba0 0x7ff6b9788ba0 %s argument after * must be an iterable, not %s
+0x1048ba8 0x7ff6b9788ba8 star_arg_list
+0x1048bb0 0x7ff6b9788bb0 __doc__
+0x1048bb8 0x7ff6b9788bb8 __file__
+0x1048bc0 0x7ff6b9788bc0 __cached__
+0x1048bc8 0x7ff6b9788bc8 __annotations__
+0x1048bd0 0x7ff6b9788bd0 ('start',)
+0x1048bd8 0x7ff6b9788bd8 Crypto.Cipher
+0x1048be0 0x7ff6b9788be0 ('AES',)
+0x1048be8 0x7ff6b9788be8 ctypes
+0x1048bf0 0x7ff6b9788bf0 sys
+0x1048bf8 0x7ff6b9788bf8 getopt
+0x1048c00 0x7ff6b9788c00 os
+0x1048c08 0x7ff6b9788c08 ('sha256',)
+0x1048c10 0x7ff6b9788c10 sha256
+0x1048c18 0x7ff6b9788c18 tkinter.messagebox
+0x1048c20 0x7ff6b9788c20 tkinter
+0x1048c28 0x7ff6b9788c28 hello
+0x1048c30 0x7ff6b9788c30 ('*',)
+0x1048c38 0x7ff6b9788c38 jiami
+0x1048c40 0x7ff6b9788c40 IV_SIZE
+0x1048c48 0x7ff6b9788c48 HMAC_SHA1_SIZE
+0x1048c50 0x7ff6b9788c50 KEY_SIZE
+0x1048c58 0x7ff6b9788c58 DEFAULT_ITER
+0x1048c60 0x7ff6b9788c60 hk:d:
+0x1048c68 0x7ff6b9788c68 opts
+0x1048c70 0x7ff6b9788c70 save_dict_to_file
+0x1048c78 0x7ff6b9788c78 load_dict_from_file
+0x1048c80 0x7ff6b9788c80 ('SharpWxDump.exe',)
+0x1048c88 0x7ff6b9788c88 comb_by_file
+0x1048c90 0x7ff6b9788c90 getb
+0x1048c98 0x7ff6b9788c98 startdo0
+0x1048ca0 0x7ff6b9788ca0 test
+0x1048ca8 0x7ff6b9788ca8 checkpv
+0x1048cb0 0x7ff6b9788cb0 blviewpv
+0x1048cb8 0x7ff6b9788cb8 step21
+0x1048cc0 0x7ff6b9788cc0 ('scrolledtext',)
+0x1048cc8 0x7ff6b9788cc8 __main__
+0x1048cd0 0x7ff6b9788cd0 __module__
+0x1048cd8 0x7ff6b9788cd8 __qualname__
+0x1048ce0 0x7ff6b9788ce0 __init__
+0x1048ce8 0x7ff6b9788ce8 PrintToTkinter.__init__
+0x1048cf0 0x7ff6b9788cf0 PrintToTkinter.write
+0x1048cf8 0x7ff6b9788cf8 flush
+0x1048d00 0x7ff6b9788d00 PrintToTkinter.flush
+0x1048d08 0x7ff6b9788d08 redirect_print_to_tkinter
+0x1048d10 0x7ff6b9788d10 ('filedialog',)
+0x1048d18 0x7ff6b9788d18 checkimgfile
+0x1048d20 0x7ff6b9788d20 step6
+0x1048d28 0x7ff6b9788d28 ('ttk',)
+0x1048d30 0x7ff6b9788d30 HourglassApp.__init__
+0x1048d38 0x7ff6b9788d38 HourglassApp.hourglass_animation
+0x1048d40 0x7ff6b9788d40 HourglassApp.start_hourglass
+0x1048d48 0x7ff6b9788d48 HourglassApp.run_process
+0x1048d50 0x7ff6b9788d50 stop_process
+0x1048d58 0x7ff6b9788d58 HourglassApp.stop_process
+0x1048d60 0x7ff6b9788d60 main
+0x1048d68 0x7ff6b9788d68 wx2wx.py
+0x1048d70 0x7ff6b9788d70 <module>
+0x1048d78 0x7ff6b9788d78 ('f', 'dat_r', 'a', 'now', 'xor', 'i', 'res', 'nowg', 'nowByte')
+0x1048d80 0x7ff6b9788d80 ('self', 'root', 'labeltext')
+0x1048d88 0x7ff6b9788d88 ('self', 'text_widget')
+0x1048d90 0x7ff6b9788d90 ('root', 'width', 'height', 'screen_width', 'screen_height', 'x', 'y')
+0x1048d98 0x7ff6b9788d98 ('dbfile', 'conn', 'cursor', 'rows', 'irec', 'sqlrecheader', 'mytmpwx', 'bmywx', 'botherwx', 'row', 'isSender', 'sql', 'l1', 'l1e', 'l1old', 'l1new', 'l1lennew', 'oldfile', 'newfile', 'l2', 'l2e', 'l2old', 'l2new', 'l2lennew', 'blob_data', 'l1lenloc', 'l2lenloc', 'e')
+0x1048da0 0x7ff6b9788da0 ('x',)
+0x1048da8 0x7ff6b9788da8 ('c', 'disk_sn_list', 'physical_disk', 'serno', 'url', 'content', 'response', 'i', 'limitday', 'szrnd', 'szjy', 's', 'md', 'current_date')
+0x1048db0 0x7ff6b9788db0 ('blexit', 'f', 'blist', 'c', 'md', 'url', 'r', 'current_date')
+0x1048db8 0x7ff6b9788db8 ('file_size1', 'i', 'command', 'result', 'sz', 'file_size2', 'f', 'blist', 'c', 'md', 'url', 'r', 'root', 'icofile')
+0x1048dc0 0x7ff6b9788dc0 ('szfile', 'blist', 'f', 'cc')
+0x1048dc8 0x7ff6b9788dc8 ('src', 'dst', 'item', 's', 'd')
+0x1048dd0 0x7ff6b9788dd0 ('src', 'dst', 'item', 's', 'd', 'i')
+0x1048dd8 0x7ff6b9788dd8 ('src', 'dst', 'b', 'sz', 'i', 'x', 'j')
+0x1048de0 0x7ff6b9788de0 ('input_pass', 'input_dir', 'SQLITE_FILE_HEADER', 'IV_SIZE', 'HMAC_SHA1_SIZE', 'KEY_SIZE', 'DEFAULT_PAGESIZE', 'DEFAULT_ITER', 'password', 'f', 'blist', 'oblist', 'salt', 'key', 'first', 'mac_salt', 'mac_key', 'hash_mac', 't', 'j', 'i')
+0x1048de8 0x7ff6b9788de8 ('input_pass', 'input_dir', 'salt', 'SQLITE_FILE_HEADER', 'IV_SIZE', 'HMAC_SHA1_SIZE', 'KEY_SIZE', 'DEFAULT_PAGESIZE', 'DEFAULT_ITER', 'icount', 'password', 'nblist', 'f', 'blist', 'key', 'first', 'mac_salt', 'mac_key', 't', 'mw', 'hash_mac', 'c', 'j', 'i')
+0x1048df0 0x7ff6b9788df0 ('x', 'blist', 'f', 'inojm')
+0x1048df8 0x7ff6b9788df8 ('input_dir', 'input_pass', 'IV_SIZE', 'HMAC_SHA1_SIZE', 'KEY_SIZE', 'DEFAULT_PAGESIZE', 'DEFAULT_ITER', 'password', 'f', 'blist', 'addbytes', 'salt', 'key', 'first', 'mac_salt', 't', 'i')
+0x1048e00 0x7ff6b9788e00 ('command', 'result', 'sz', 'irec', 'icount', 'l', 'i')
+0x1048e08 0x7ff6b9788e08 ('url', 'local_filename', 'progress_callback', 'response', 'total_size', 'block_size', 'icount', 'file', 'data')
+0x1048e10 0x7ff6b9788e10 ('j', 'x')
+0x1048e18 0x7ff6b9788e18 ('input_dir', 'input_pass', 'IV_SIZE', 'HMAC_SHA1_SIZE', 'KEY_SIZE', 'DEFAULT_PAGESIZE', 'DEFAULT_ITER', 'icount', 'password', 'nblist', 'f', 'blist', 'addbyte', 'salt', 'key', 'first', 'mac_salt', 't', 'mw', 'i')
+0x1048e20 0x7ff6b9788e20 ('dat_path', 'fsinfo', 'dat_file_name', 'temp_path')
+0x1048e28 0x7ff6b9788e28 ('dat_path', 'xo', 'fsinfo', 'dat_file_name', 'temp_path')
+0x1048e30 0x7ff6b9788e30 ('filepath', 'a', 's', 'item')
+0x1048e38 0x7ff6b9788e38 ('self',)
+0x1048e40 0x7ff6b9788e40 ('cc', 'cc1', 'b')
+0x1048e48 0x7ff6b9788e48 ('b', 'f', 'blist', 'c', 'md', 'url', 'r', 'cc', 'cc1')
+0x1048e50 0x7ff6b9788e50 ('WeChatKey', 'WeChatAccount', 'command', 'b', 'f', 'blist', 'szts', 'result', 'sz', 'k', 'x', 'blweixinverok', 'k1')
+0x1048e58 0x7ff6b9788e58 ('self', 'hourglass_states', 'state_index')
+0x1048e60 0x7ff6b9788e60 ('f', 'out', 'xo', 'i')
+0x1048e68 0x7ff6b9788e68 ('folder_path', 'salt', 'filenames', 'x')
+0x1048e70 0x7ff6b9788e70 ('command', 'result', 'sz')
+0x1048e78 0x7ff6b9788e78 ('file_path', 'file', 'byte_data', 'dict_data')
+0x1048e80 0x7ff6b9788e80 ('p', 'f', 'i', 'j')
+0x1048e88 0x7ff6b9788e88 ('icofile', 'command', 'result', 'sz')
+0x1048e90 0x7ff6b9788e90 ('sz', 'f', 'i')
+0x1048e98 0x7ff6b9788e98 ('serno', 'szday', 'sz', 'szrnd', 'offlineregnomd5', 's', 'md1', 'md')
+0x1048ea0 0x7ff6b9788ea0 ('original_stdout', 'root')
+0x1048ea8 0x7ff6b9788ea8 ('dbfile', 'f', 'blist')
+0x1048eb0 0x7ff6b9788eb0 ('original_stdout', 'root', 'text_area', 'on_closing')
+0x1048eb8 0x7ff6b9788eb8 ('self', 'animation_thread')
+0x1048ec0 0x7ff6b9788ec0 ('dict_data', 'file_path', 'file', 'byte_data')
+0x1048ec8 0x7ff6b9788ec8 ('p', 'i', 'f')
+0x1048ed0 0x7ff6b9788ed0 ('initialdir', 'filetypes', 'filename')
+0x1048ed8 0x7ff6b9788ed8 ('url', 'filename', 'command', 'result', 'sz')
+0x1048ee0 0x7ff6b9788ee0 ('download_thread',)
+0x1048ee8 0x7ff6b9788ee8 ('x', 'starttime', 'conn', 'cursor', 'rows', 'j', 'k', 'tmp', 'i', 'myfiledb', 'myconn', 'mycursor', 'irec', 'myrows', 'newtime', 'iall')
+0x1048ef0 0x7ff6b9788ef0 ('os', 'iall', 'irec', 'x', 'dbtmpfile')
+0x1048ef8 0x7ff6b9788ef8 ('master', 'url_label', 'threadnumber_label', 'cthreadnumber_label', 'counter_label', 'cnum_label', 'timesplit_label', 'icofile', 'hi_there', 'sm', 'bquit', 'start')
+0x1048f00 0x7ff6b9788f00 ('msg', 'title', 'fieldNames', 'fieldValues', 'directory', 'errmsg', 'i', 'option')
+0x1048f08 0x7ff6b9788f08 ('sm',)
+0x1048f10 0x7ff6b9788f10 ('userid', 'mkey', 'szts', 'directory', 'answer', 'msg', 'title', 'fieldNames', 'fieldValues', 'errmsg', 'i', 'option', 'c', 'disk_sn_list', 'physical_disk', 'serno')
+0x1048f18 0x7ff6b9788f18 ('userid', 'mkey', 'szts', 'directory', 'answer', 'msg', 'title', 'fieldNames', 'fieldValues', 'errmsg', 'i', 'option', 'sm')
+0x1048f20 0x7ff6b9788f20 ('url', 'sm')
+0x1048f28 0x7ff6b9788f28 ('msg', 'title', 'fieldNames', 'fieldValues', 'errmsg', 'i', 'option')
+0x1048f30 0x7ff6b9788f30 ('Timer', 'i', 'timer')
+0x1048f38 0x7ff6b9788f38 ('tmp', 'msg', 'title', 'fieldNames', 'fieldValues', 'errmsg', 'i', 'option')
+0x1048f40 0x7ff6b9788f40 ('a', 's', 'Timer', 'timer')
+0x1048f48 0x7ff6b9788f48 ('sm', 'icheckreg')
+0x1048f50 0x7ff6b9788f50 ('dbfile', 'myconn', 'irec', 'mycursor', 'conn', 'cursor', 'rows', 'row', 'sqlrecheader', 'mytmpwx', 'row1', 'ssql', 'j', 'x', 'sx', 'sql')
+0x1048f58 0x7ff6b9788f58 ('input_dir', 'f', 'blist', 's', 'x', 'salt')
+0x1048f60 0x7ff6b9788f60 ('received', 'total', 'percent')
+0x1048f68 0x7ff6b9788f68 ('f', 'blist', 'c', 'md', 'url')
+0x1048f70 0x7ff6b9788f70 ('root', 'app', 'icofile')
+0x1048f78 0x7ff6b9788f78 ('self', 'message')
+0x1048f80 0x7ff6b9788f80 ('szbasefile', 'xo')
+0x1048f88 0x7ff6b9788f88 ('filename', 'xo', 'oldxo', 'f', 'b', 'w', 'data')
+0x1048f90 0x7ff6b9788f90 ('filename', 'xo', 'f', 'b', 'w', 'data')
